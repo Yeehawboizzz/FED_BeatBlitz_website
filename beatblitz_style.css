@@ -1,0 +1,161 @@
+/*GENERAL USE*/
+body 
+{
+  background-color: gray;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar 
+{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(79, 79, 79);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  position: relative;
+}
+
+.navbar:hover 
+{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.navbar > p 
+{
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add this line */
+}
+
+.navbar>p:hover {
+  background-color: red; /* Add this block */
+  color: rgb(31, 81, 167); /* Add this block */
+}
+  
+.footer-container {
+  background-color: rgb(31, 81, 167);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+  
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
+  
+.community {
+  flex: 1;
+  text-align: center; 
+  justify-content: center;
+  padding: 10px;
+  margin-top: 0;
+}
+  
+.community > button {
+  color: white;
+  display: block;
+  font-size: 18px;
+  padding:5px;
+}
+  
+.contact-info {
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+}
+  
+.contact-info > ul {
+  list-style: none;
+}
+  
+.contact-info > li {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+  
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: right;
+  padding: 10px;
+  font-size: 15px;
+}
+  
+.copyright > p {
+  margin: 5px 0;
+  color: white;
+}
+
+/*HOMEPAGE*/
+.Gamemode1
+{
+  background-color: gray; 
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  height: 100px;
+  width: 100px;
+  padding: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Gamemode1:hover 
+{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.Gamemode2
+{
+  background-color: gray; 
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  height: 100px;
+  width: 100px;
+  padding: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Gamemode2:hover 
+{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.content 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: darkred;
+  width: 100vw;
+  height: 30vw;
+}
+
+.content > p 
+{
+  background-color: gray;
+  margin: 25px;
+  padding: 30px;
+  font-size: 15px;
+}
