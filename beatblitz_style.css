@@ -47,40 +47,9 @@ body
   
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   font-size: 20px;
-}
-  
-.community {
-  flex: 1;
-  text-align: center; 
-  justify-content: center;
-  padding: 10px;
-  margin-top: 0;
-}
-  
-.community > button {
-  color: white;
-  display: block;
-  font-size: 18px;
-  padding:5px;
-}
-  
-.contact-info {
-  flex: 1;
-  text-align: center;
-  padding: 12px;
-}
-  
-.contact-info > ul {
-  list-style: none;
-}
-  
-.contact-info > li {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 18px;
 }
   
 .copyright {
@@ -103,7 +72,7 @@ body
   background-color: gray; 
   background-size: cover;
   background-position: center;
-  text-decoration: none;
+  text-align: center;
   height: 100px;
   width: 100px;
   padding: 30px;
@@ -125,7 +94,7 @@ body
   background-color: gray; 
   background-size: cover;
   background-position: center;
-  text-decoration: none;
+  text-align: center;
   height: 100px;
   width: 100px;
   padding: 30px;
@@ -142,20 +111,62 @@ body
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
-.content 
+.Admode
+{
+  background-color: gray; 
+  background-size: cover;
+  position: center;
+  text-align: center;
+  height: 20px;
+  width: 150px;
+  padding: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Admode:hover 
+{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.Gamemodes 
 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: darkred;
   width: 100vw;
-  height: 30vw;
+  height: 18vw;
 }
 
-.content > p 
+.Gamemodes > p 
 {
   background-color: gray;
   margin: 25px;
   padding: 30px;
   font-size: 15px;
 }
+
+.Content 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: darkred;
+  width: 100vw;
+  height: 9.7vw;
+}
+
+.Content > p 
+{
+  background-color: gray;
+  margin: 25px;
+  padding: 30px;
+  font-size: 15px;
+}
+
+
