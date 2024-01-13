@@ -1,7 +1,9 @@
 /*GENERAL USE*/
 body 
 {
-  background-color: gray;
+  color: white;
+  overflow-x: hidden;
+  background-color: rgb(80, 66, 123);
   height: 100%;
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@ body
 {
   display: flex;
   justify-content: center;
-  background-color: rgb(79, 79, 79);
+  background-color: rgb(139, 115, 255);
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   border-radius: 10px;
@@ -69,7 +71,7 @@ body
 /*HOMEPAGE*/
 .Gamemode1
 {
-  background-color: gray; 
+  background-color: rgb(51, 143, 255); 
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -91,7 +93,7 @@ body
 
 .Gamemode2
 {
-  background-color: gray; 
+  background-color: rgb(255, 68, 68); 
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -113,7 +115,7 @@ body
 
 .Admode
 {
-  background-color: gray; 
+  background-color: rgb(127, 69, 141); 
   background-size: cover;
   position: center;
   text-align: center;
@@ -139,6 +141,9 @@ body
   flex-direction: row;
   justify-content: center;
   background-color: darkred;
+  background-image: url(Images/Background.jpg);
+  background-position: top center;
+  gap: 70px;
   width: 100vw;
   height: 18vw;
 }
@@ -151,22 +156,67 @@ body
   font-size: 15px;
 }
 
-.Content 
+.Adventure 
 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: darkred;
+  background-image: url(Images/Background.jpg);
+  background-position: center;
   width: 100vw;
   height: 9.7vw;
 }
 
-.Content > p 
+.Adventure > p 
 {
   background-color: gray;
   margin: 25px;
   padding: 30px;
   font-size: 15px;
+}
+
+.Genre
+{
+  background-color: gray; 
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+  height: 120px;
+  width: 120px;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.GenreGrid 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url(Images/Background2.jpg);
+  background-size: cover;
+  background-color: rgb(127, 69, 141);
+  width: 100vw;
+}
+
+.GenreGrid > p 
+{
+  background-color: gray;
+  margin: 25px;
+  padding: 30px;
+  font-size: 15px;
+}
+
+.top-row,
+.middle-row,
+.bottom-row 
+{
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
 }
 
 /*GAMEMODE 1 DIFFICULTY*/
