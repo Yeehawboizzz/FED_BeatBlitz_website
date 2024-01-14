@@ -369,7 +369,7 @@ button {
 
 /*EASY MODE*/
 #countdown-container {
-  width: 300px;
+  width: 100%;
   height: 30px;
   border: 1px solid #ccc;
   position: relative;
