@@ -1,0 +1,368 @@
+/*GENERAL USE*/
+body 
+{
+  color: white;
+  overflow-x: hidden;
+  background-color: rgb(80, 66, 123);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar 
+{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(139, 115, 255);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  position: relative;
+}
+
+.navbar:hover 
+{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.navbar > p 
+{
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add this line */
+}
+
+.navbar>p:hover {
+  background-color: red; /* Add this block */
+  color: rgb(31, 81, 167); /* Add this block */
+}
+  
+.footer-container {
+  background-color: rgb(31, 81, 167);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+  
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
+  
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: right;
+  padding: 10px;
+  font-size: 15px;
+}
+  
+.copyright > p {
+  margin: 5px 0;
+  color: white;
+}
+
+/*HOMEPAGE*/
+.Gamemode1
+{
+  background-color: rgb(51, 143, 255); 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  padding: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Gamemode1:hover 
+{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.Gamemode2
+{
+  background-color: rgb(255, 68, 68); 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  padding: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Gamemode2:hover 
+{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.Admode
+{
+  background-color: rgb(127, 69, 141); 
+  background-size: cover;
+  position: center;
+  text-align: center;
+  height: 20px;
+  width: 150px;
+  padding: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Admode:hover 
+{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.Gamemodes 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: darkred;
+  background-image: url(Images/Background.jpg);
+  background-position: top center;
+  gap: 70px;
+  width: 100vw;
+  height: 18vw;
+}
+
+.Gamemodes > p 
+{
+  background-color: gray;
+  margin: 25px;
+  padding: 30px;
+  font-size: 15px;
+}
+
+.Adventure 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: darkred;
+  background-image: url(Images/Background.jpg);
+  background-position: center;
+  width: 100vw;
+  height: 9.7vw;
+}
+
+.Adventure > p 
+{
+  background-color: gray;
+  margin: 25px;
+  padding: 30px;
+  font-size: 15px;
+}
+
+.Genre
+{
+  background-color: gray; 
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+  height: 120px;
+  width: 120px;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.GenreGrid 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url(Images/Background2.jpg);
+  background-size: cover;
+  background-color: rgb(127, 69, 141);
+  width: 100vw;
+}
+
+.GenreGrid > p 
+{
+  background-color: gray;
+  margin: 25px;
+  padding: 30px;
+  font-size: 15px;
+}
+
+.top-row,
+.middle-row,
+.bottom-row 
+{
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+}
+
+/*GAMEMODE 1 DIFFICULTY*/
+.Easy
+{
+  background-color: rgb(51, 143, 255); 
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  padding: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Easy:hover 
+{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.Hard
+{
+  background-color: rgb(255, 68, 68); 
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  padding: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Hard:hover 
+{
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.Diff 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: darkred;
+  background-image: url(Images/Background.jpg);
+  background-position: top center;
+  gap: 50px;
+  width: 100vw;
+  height: 30vw;
+}
+
+.Diff > p 
+{
+  background-color: gray;
+  margin: 25px;
+  padding: 30px;
+  font-size: 15px;
+}
+
+.title {
+  color: #ffffff;
+  font-family: "Coda", sans-serif;
+  text-align: center;
+}
+.profile {
+  margin: auto;
+	width: 27em; 
+  height: 15em;
+  background: #fff;
+  border-radius: .3em;
+}
+
+.profile  #fullname {
+  margin: auto;
+  margin-top: -4.40em;
+  margin-left: 5.80em;
+  color: #dc8fff;
+  font-size: 1.53em;
+  font-family: "Coda", sans-serif;
+  font-weight: bold;
+}
+
+#username {
+  margin: auto;
+  display: inline-block;
+  margin-left: 10.43em;
+  color: #7a588a;
+  font-size: .87em;
+  font-family: "varela round", sans-serif;
+}
+
+.profile > .description {
+  margin: auto;
+  margin-top: 1.35em;
+  margin-bottom: 3em;
+  margin-right: 3em;
+  width: 18em;
+  color: #4a5cb8;
+  font-size: .87em;
+  font-family: "varela round", sans-serif;
+}
+
+.profile > img#avatar {
+	padding: .7em;
+  margin-left: .3em;
+  margin-top: .3em;
+  height: 6.23em;
+  width: 6.23em;
+  border-radius: 18em;
+}
+
+
+.playbutton {
+	margin: 0%;
+	height: 3.70em;
+  background: #5862b9;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.1s;
+}
+
+button {
+  color: white;
+  font-family: "Coda", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  background: none;
+  outline: none;
+  border: 0;
+}
+
+.playbutton:hover {
+  background: #bc1a6e;
+}
+
+.left,
+.right
+{
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
