@@ -219,7 +219,7 @@ body
   display: flex;
 }
 
-/*GAMEMODE 1 DIFFICULTY*/
+/*GAMEMODE 1 & 2 DIFFICULTY*/
 .Easy
 {
   background-color: rgb(51, 143, 255); 
@@ -365,4 +365,100 @@ button {
   justify-content: center;
   flex-direction: column;
   display: flex;
+}
+
+/*EASY MODE*/
+#countdown-container {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+}
+
+#countdown-bar {
+  height: 100%;
+  background-color: #4CAF50;
+  width: 100%;
+  transition: width linear;
+}
+
+#countdown-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  font-size: 16px;
+}
+
+.question {
+  background-color: white;
+  position: center;
+  text-align: center;
+  height: 5vw;
+  justify-content: center;
+}
+
+.question > p {
+  margin: 10px;
+  padding: 10px
+}
+
+.answers
+{
+  background-color: gray; 
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+  height: 20px;
+  width: 300px;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.ansGrid 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url(Images/Background2.jpg);
+  background-size: cover;
+  background-color: rgb(127, 69, 141);
+  width: 100vw;
+}
+
+.ansGrid > p 
+{
+  background-color: gray;
+  margin: 25px;
+  padding: 30px;
+  font-size: 15px;
+}
+
+.top,
+.bottom
+{
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+}
+
+/*HARD MODE*/
+.ansBar {
+  width: 30vw;
+  margin: 25px;
+  padding: 30px;
+  background-color: white;
+}
+
+.ansBar > p 
+{
+  background-color: gray;
+  margin: 25px;
+  padding: 30px;
+  font-size: 15px;
 }
