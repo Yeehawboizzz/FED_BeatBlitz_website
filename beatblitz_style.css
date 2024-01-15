@@ -14,6 +14,7 @@ body
   background-image: url(Images/Background2.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .navbar 
@@ -147,9 +148,7 @@ body
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: darkred;
-  background-image: url(Images/Background.jpg);
-  background-position: top center;
+
   gap: 70px;
   width: 100vw;
   height: 18vw;
@@ -168,9 +167,6 @@ body
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: darkred;
-  background-image: url(Images/Background.jpg);
-  background-position: center;
   width: 100vw;
   height: 9.7vw;
 }
@@ -203,9 +199,6 @@ body
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: url(Images/Background2.jpg);
-  background-size: cover;
-  background-color: rgb(127, 69, 141);
   width: 100vw;
 }
 
@@ -272,9 +265,6 @@ body
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: darkred;
-  background-image: url(Images/Background.jpg);
-  background-position: top center;
   gap: 50px;
   width: 100vw;
   height: 30vw;
@@ -432,9 +422,6 @@ button {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: url(Images/Background2.jpg);
-  background-size: cover;
-  background-color: rgb(127, 69, 141);
   width: 100vw;
 }
 
