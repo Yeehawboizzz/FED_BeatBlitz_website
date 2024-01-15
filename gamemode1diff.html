@@ -6,6 +6,7 @@
 <title>Guess the Lyrics</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="beatblitz_style.css" rel="stylesheet" type="text/css">
+<script src="difficulty.js"></script>
 </head>
 
 <body class="background">
@@ -15,8 +16,8 @@
 
 <div class="Diff">
     <div class="left">
-        <p class="Easy" style="font-size: medium;"> EASY</p>
-        <p class="Hard" style="font-size: medium;">HARD</p>
+        <button class="Easy" style="font-size: medium;" onclick="selectDifficulty('easy')">EASY</button>
+        <button class="Hard" style="font-size: medium;" onclick="selectDifficulty('hard')">HARD</button>
     </div>
 
     <div class="right">
@@ -26,9 +27,7 @@
         <div id="fullname">RICK ASTLEY</div>
         <div class="description">Embrace your inner self and dive into the music.</div>
         <div class="playbutton"><button id="btn">RANDOMIZE</button></div>
-        <a href="easymode.html" style="text-decoration: none; color: inherit;"><div class="playbutton">
-            <button id="btn">PLAY NOW</button>
-        </div></a>
+        <div class="playbutton"><button id="playNowBtn" onclick="playNow()">PLAY NOW</button></div>
         </div>
     </div>
 </div>
