@@ -1,4 +1,13 @@
-function selectDifficulty(difficulty) {
+function selectDifficulty(difficulty, button) {
+    // Remove the 'selected' class from all buttons
+    var buttons = document.querySelectorAll('.left button');
+    buttons.forEach(function (btn) {
+        btn.classList.remove('selected');
+    });
+
+    // Add the 'selected' class to the clicked button
+    button.classList.add('selected');
+
     // Store the selected difficulty in sessionStorage
     sessionStorage.setItem('difficulty', difficulty);
 }

@@ -182,7 +182,6 @@ body
 .Genre
 {
   background-color: gray; 
-  background-image: url();
   background-size: cover;
   background-position: center;
   font-weight: bold;
@@ -191,6 +190,42 @@ body
   padding: 30px;
   margin: 10px;
   border-radius: 10px;
+}
+
+.Pop{
+  background-image: url(Images/Pop.jpg);
+}
+
+.Rock{
+  background-image: url(Images/Rock.jpg);
+}
+
+.Rap{
+  background-image: url(Images/Rap.jpg);
+}
+
+.JPop{
+  background-image: url(Images/JPop.jpg);
+}
+
+.Funk{
+  background-image: url(Images/Funk.jpg);
+}
+
+.Mando{
+  background-image: url(Images/Mando.jpg);
+}
+
+.KPop{
+  background-image: url(Images/KPop.jpg);
+}
+
+.Phonk{
+  background-image: url(Images/Phonk.jpg);
+}
+
+.Jazz{
+  background-image: url(Images/Jazz.jpg);
 }
 
 .GenreGrid 
@@ -276,6 +311,11 @@ body
   margin: 25px;
   padding: 30px;
   font-size: 15px;
+}
+
+.selected {
+  background-color: #b22dff; /* Darkened color for selected button */
+  color: #fff;
 }
 
 .title {
