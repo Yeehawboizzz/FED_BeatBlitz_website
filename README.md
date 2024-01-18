@@ -81,6 +81,8 @@ I took images from these links:
 
 Background: https://pngtree.com/freebackground/otherworldly-futuristic-corridor-electronic-dance-music-event-advanced-tech-backdrop-temporal-rift-gateway-velocity-warp-hyperspace-idea-three-dimensional-illustration_5791830.html
 
+RandomUser: https://www.giantfreakinrobot.com/ent/rick-astley-remake-never-gonna-give-you-up.html
+
 Pop: https://www.facebook.com/michaeljackson/
 
 Rock: https://www.independent.co.uk/arts-entertainment/music/features/acdc-interview-angus-brian-johnson-power-up-b1721735.html
