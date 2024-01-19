@@ -220,6 +220,251 @@ body {
   display: flex;
 }
 
+/*ALL ALBUMS*/
+.filter-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    border: 1px solid #a2a2a2;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #f7efe6;
+    }
+    
+  .filter-box label {
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 5px
+  }
+    
+  .filter-box select {
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 5px
+  }
+  
+  .ball-display-box.hidden {
+    display: none;
+  }
+  
+  /*Shopping Cart*/
+  .add-to-cart-button {
+    font-size: 18px; 
+    padding: 10px 20px; 
+    background-color: #dbdbdb;
+    border-radius: 5px;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #f88f44;
+    color: #fff;
+  }
+  
+  #shopping-cart-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 15px;
+    background-color: #f88f44;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  #cart-popup {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    min-width: 250px;
+    text-align: left;
+    border-radius: 5px;
+  }
+  
+  #cart-popup h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  #cart-table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+  }
+  
+  #cart-table th,
+  #cart-table td {
+    padding: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: left;
+  }
+  
+  #cart-summary {
+    text-align: right;
+    margin-top: 15px;
+  }
+  
+  #total-price {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  #checkout-button {
+    background-color: #fff;
+    color: #f88f44;
+    border: 1px solid #f17115;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  #checkout-button:hover {
+    background-color: #f88f44;
+    color: #fff;
+  }
+  
+  #close-cart {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 14px;
+    color: #f88f44;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #f17115;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .clear-cart {
+    background-color: #fff;
+    color: #f88f44;
+    border: 1px solid #f17115;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 150px;
+    float: left; 
+  }
+  
+  .clear-cart:hover {
+    background-color: #f88f44;
+    color: #fff;
+  }
+  
+  #product-purchase-message {
+    display: none;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1000; 
+  }
+  
+  #fail-purchase-message {
+    display: none;
+    background-color: #f35050;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1000; 
+  }
+  
+  /*Bowling Ball Display*/
+  body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255); 
+  }
+  
+  .bowling-ball-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .ball-display-box {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #a2a2a2;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 15px;
+    background-color: #f7efe6;
+    transition: transform 0.3s ease-in-out; 
+    margin: 5px;
+  }
+  
+  /*Ensure that the hover animation don't cover my ball info*/
+  .ball-display-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: inherit;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ball-display-box:hover::before {
+    transform: scale(1.05);
+  }
+  
+  .ball-display-box li{
+    font-size: 19px;
+    text-align: left;
+    padding-left: 55px;
+  }
+  
+  .ball-display-box img{
+    margin-bottom: 10px;
+  }
+  
+  .ball-info li{
+    text-align: left;
+    padding-right: 30px;
+    white-space: nowrap;
+  }
+  
+  /*Hidden Additional Ball Info Box*/
+  .ball-info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
 
 
 
