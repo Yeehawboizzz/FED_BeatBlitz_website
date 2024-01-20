@@ -3,9 +3,9 @@ Done by: Wang Po Yen Jason and Ong Yee Hen
 Class: IT02
 
 **Introduction**: 
-Welcome to The Echoes Chamber! Step into a digital haven that transcends the ordinary one-stop destination for a symphony of musical experiences. We proudly present a unique online shop that goes beyond just albums and playlists, but to a world where music is not just heard, but felt.
+Welcome to The Echo Chamber! Step into a digital haven that transcends the ordinary one-stop destination for a symphony of musical experiences. We proudly present a unique online shop that goes beyond just albums and playlists, but to a world where music is not just heard, but felt.
 
-At The Echoes Chamber, our shelves are adorned with a curated collection of albums spanning genres and eras. Immerse yourself in the timeless classics, discover hidden gems, and explore the latest masterpieces that redefine musical boundaries. Whether you're a vinyl enthusiast, a CD connoisseur, or a digital maestro, our collection caters to all audiophiles.
+At The Echo Chamber, our shelves are adorned with a curated collection of albums spanning genres and eras. Immerse yourself in the timeless classics, discover hidden gems, and explore the latest masterpieces that redefine musical boundaries. Whether you're a vinyl enthusiast, a CD connoisseur, or a digital maestro, our collection caters to all audiophiles.
 
 But that's not all, we dive into the world of curated playlists, meticulously crafted to accompany every moment of your life. Seamlessly connect with Spotify and let the rhythm follow you wherever you go. 
 
@@ -51,9 +51,6 @@ Website Contains X Main Pages:
 
 
 **Page 6: BeatBlitz Score Page**
-
-
-
 
 
 
