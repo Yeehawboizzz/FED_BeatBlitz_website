@@ -3,17 +3,20 @@ Done by: Wang Po Yen Jason and Ong Yee Hen
 Class: IT02
 
 **Introduction**: 
-Welcome to BeatBlitz! Step into the world of rhythm and rhymes with our cutting-edge Front Development Project done by  that brings a unique twist to your musical knowledge. Whether you're a lyrics aficionado or keen identifying the elusive artist behind the tunes, our website offers an exhilarating experience where you can either guess the song lyrics or identify the elusive singer behind the tunes.
+Welcome to The Echoes Chamber! Step into a digital haven that transcends the ordinary one-stop destination for a symphony of musical experiences. We proudly present a unique online shop that goes beyond just albums and playlists, but to a world where music is not just heard, but felt.
 
-Dive into the excitement with multiple game modes tailored to suit your expertise. Are you up for a casual round? Opt for the easy mode, where multiple-choice questions will test your knowledge of popular songs and artists. Feeling daring and ready for a challenge? Brace yourself for the hard mode, where you'll fill in the blanks and truly prove your mastery of musical trivia.
+At The Echoes Chamber, our shelves are adorned with a curated collection of albums spanning genres and eras. Immerse yourself in the timeless classics, discover hidden gems, and explore the latest masterpieces that redefine musical boundaries. Whether you're a vinyl enthusiast, a CD connoisseur, or a digital maestro, our collection caters to all audiophiles.
 
-But wait, the thrill doesn't stop there! Each question comes with a countdown timer, adding an extra layer of intensity to the gameplay. When the game ends, bask in the glory of your achievements with a detailed scoreboard that highlights your points, bonus points for consecutive correct answers as well as your ranking in the world.
+But that's not all, we dive into the world of curated playlists, meticulously crafted to accompany every moment of your life. Seamlessly connect with Spotify and let the rhythm follow you wherever you go. 
 
-Embark on an exhilarating musical odyssey with our Adventure Mode, where the thrill knows no bounds! Unlike conventional quiz formats, Adventure Mode invites you to immerse yourself in an endless quest for musical mastery. Here, questions are not limited, but only multiple choice and you can keep going until you hit the first wrong note. The challenge intensifies as Special Functions are not available and Count Down Timer is shorter than conventional modes. Your streak of consecutive correct answers unlocks bonus points, creating a dynamic and competitive environment. With each successive correct response, you ascend higher on the leaderboard, accumulating bonus points that showcase your resilience and expertise. 
+For those who crave a challenge, we introduce BeatBlitz, a mini-game that puts your music knowledge to the test.
+It offers an exhilarating experience where you can guess the elusive singer behind the tunes.
 
-Featuring "Special Functions" that elevate the excitement, you can strategically use in-game currencies to enhance your gameplay. Earn gold coins by acing questions, with each correct answer adding another coin to your virtual treasure. Unlock the power to add time to the clock, change a question, or gain a valuable hint when the pressure is on and the timer is ticking down to the last 15 seconds while playing.
+Immerse yourself in the excitement with our specially crafted game mode tailored to suit your musical expertise. Whether you're a casual listener or a seasoned music aficionado, our multiple-choice challenge awaits you. Opt for a round of fun as you test your knowledge of popular songs and artists in our engaging and entertaining game. 
 
- Are you ready to face the challenge and become the ultimate maestro of our musical realm? Play BeatBlitz now!
+But wait, the thrill doesn't stop there! Each question comes with a countdown timer, adding an extra layer of intensity to the gameplay. When the game ends, bask in the glory of your achievements with a detailed scoreboard that highlights your points as well as an Achievement Title.
+
+Are you ready to face the challenge and become the ultimate maestro of our musical realm? Play BeatBlitz now!
 
 
 **Design Process**
@@ -32,16 +35,24 @@ https://www.figma.com/file/XPPq3BGMSMXN7iMKS2qmLv/FED-BeatBlitz?type=design&node
 
 Website Contains X Main Pages:
 
-**Page 1: Index Page (Home) (No JavaScript)**
+**Page 1: Index Page (Home)**
 
 
-**Page 2:**
+**Page 2: All Albums Shop Page**
 
 
-**Page 3:**
+**Page 3: Playlists Page**
 
 
-**Page 4:**
+**Page 4: BeatBlitz Start Page**
+
+
+**Page 5: BeatBlitz Game Page**
+
+
+**Page 6: BeatBlitz Score Page**
+
+
 
 
 
@@ -49,24 +60,31 @@ Website Contains X Main Pages:
 **Technologies Used**
 - Languages: HTML, CSS and JavaScript
 - Coding Platform: VS Code
+- Others: Bootstrap, Lottie Animation
 
 
 **Testing**
 
 
 **Responsiveness (Mobile View)**
-1. Website is responsive, when width hits below 767px, mobile view is activated.
+Website is responsive, when width hits below 767px, mobile view is activated.
 
-2. Home Page: 
-
-
-3. About Us Page:
+**Page 1: Index Page (Home)**
 
 
-4. Coaching Page:
+**Page 2: All Albums Shop Page**
 
 
-5. Equipment Page
+**Page 3: Playlists Page**
+
+
+**Page 4: BeatBlitz Start Page**
+
+
+**Page 5: BeatBlitz Game Page**
+
+
+**Page 6: BeatBlitz Score Page**
 
 
 
@@ -93,5 +111,8 @@ I took images from these links:
 
 
 **Acknowledgements**:
--I received inspiration from: https://songtrivia2.io/
+-I received inspiration from: 
+1. https://songtrivia2.io/ 
+2. https://theanalogvault.com/
+
 -Help from ChatGPT for advanced JS functions. (Understood Code)
