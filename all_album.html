@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE ECHO CHAMBER</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="the-echo-chamber-style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body class="font">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="cart.js"></script>
+
+<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">THE ECHO CHAMBER</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarScroll">
+    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="all_album.html">ALL ALBUMS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="game_home.html">BEATBLITZ</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="playlist.html">PLAYLIST</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+</nav>
+
+<!--Shopping Cart-->
+<div id="shopping-cart-container">
+  <p>Cart</p>
+  <img id="cart-icon" src="Images/cart.png" alt="shopping cart icon" width="50" height="50">
+  
+  <div id="cart-popup">
+    <button id="close-cart">Close</button>
+    <h2>Shopping Cart</h2>
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items"></tbody>
+    </table>
+    
+    <div id="cart-summary">
+      <p>Total: $<span id="total-price">0</span></p>
+      <button class="clear-cart">Clear Cart</button>
+      <button id="checkout-button">Buy</button>
+    </div>
+  </div>
+</div>
+
+<!--Payment Success and Fail Message Classes-->
+<div class="product-purchase-message" id="product-purchase-message"></div>
+<div class="fail-purchase-message" id="fail-purchase-message"></div>
+
+<!--Filter Panel-->
+<div class="filter-box">
+  <label for="price">Price:</label>
+    <select id="price">
+      <option value="all">Select</option>
+      <option value="low">Low to High</option>
+      <option value="high">High to Low</option>
+    </select>
+  
+  <label for="category">Category:</label>
+    <select id="category">
+      <option value="all">All</option>
+      <option value="weeknd">The Weeknd</option>
+      <option value="taylor">Taylor Swift</option>
+      <option value="coldplay">Coldplay</option>
+      <option value="justin">Justin Bieber</option>
+      <option value="ed">Ed Sheeran</option> 
+      <option value="eminem">Eminem</option> 
+    </select>
+</div>
+  
+<BR>
+
+<!--Album Display-->
+<div class="bowling-ball-container">
+  <div class="ball-display-box" data-category="weeknd" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>THE WEEKND</h2>
+    <img src="Images/album1-weeknd.jpg" alt="image of weeknd"
+    width="300"
+    height="300">
+    <p>After Hours</p>
+    <p>Price: $45.00SGD</p>
+
+    <div class="ball-info">
+      <ul>
+        <li>14 songs</li>
+        <li>Release: 20/03/2020</li>
+        <li>Length: 56:19</li>
+        <li>Label: XO</li>
+      </ul>
+    </div>
+        
+    <button class="add-to-cart-button" data-ball-name="The Weeknd After Hours" data-ball-price="45">Add to Cart</button>   
+  </div>
+
+  <div class="ball-display-box" data-category="taylor" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>Taylor Swift</h2>
+    <img src="Images/album2-taylor.jpg" alt="image of taylor"
+    width="300"
+    height="300">
+    <p>1989</p>
+    <p>Price: $45.00SGD</p>
+        
+    <div class="ball-info">
+      <ul>
+        <li>22 songs</li>
+        <li>Release: 27/10/2023</li>
+        <li>Length: 77:49</li>
+        <li>Label: Republic Records</li>
+      </ul>
+    </div>
+        
+    <button class="add-to-cart-button" data-ball-name="Taylor Swift 1989" data-ball-price="45">Add to Cart</button>
+  </div>
+
+  <div class="ball-display-box" data-category="coldplay" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>Coldplay</h2>
+    <img src="Images/album3-coldplay" alt="image of coldplay"
+    width="300"
+    height="300">
+    <p>Music of the Spheres</p>
+    <p>Price: $45.00SGD</p>
+      
+    <div class="ball-info">
+      <ul>
+        <li>12 songs</li>
+        <li>Release: 15/10/2021</li>
+        <li>Length 41:50</li>
+        <li>Label: Parlophone; Atlantic</li>
+      </ul>
+    </div>
+      
+    <button class="add-to-cart-button" data-ball-name="Coldplay Music of the Spheres" data-ball-price="45">Add to Cart</button>
+  </div>
+
+  <div class="ball-display-box" data-category="justin" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)" >
+    <h2>Justin Bieber</h2>
+    <img src="Images/album4-justin.jpg" alt="image of justin"
+    width="300"
+    height="300">
+    <p>Justice</p>
+    <p>Price: $45.00SGD</p>
+    
+    <div class="ball-info">
+      <ul>
+        <li>17 songs</li>
+        <li>Release: 19/03/2021</li>
+        <li>Length: 45:26</li>
+        <li>Label: Def Jam; RBMG; Schoolboy</li>
+      </ul>
+    </div>
+
+    <button class="add-to-cart-button" data-ball-name="Justin Bieber Justice" data-ball-price="45">Add to Cart</button>
+  </div>
+
+  <div class="ball-display-box" data-category="weeknd" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>The Weeknd</h2>
+    <img src="Images/album5-weeknd.jpg" alt="image of weeknd"
+    width="300"
+    height="300">
+    <p>Starboy</p>
+    <p>Price: $40.00SGD</p>
+    <div class="ball-info">
+      <ul>
+        <li>18 songs</li>
+        <li>Release: 25/11/2016</li>
+        <li>Length: 68:40</li>
+        <li>Label: XO; Republic</li>
+      </ul>
+    </div>
+
+    <button class="add-to-cart-button" data-ball-name="The Weeknd Starboy" data-ball-price="40">Add to Cart</button>
+  </div>
+
+  <div class="ball-display-box" data-category="justin" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>Justin Bieber</h2>
+    <img src="Images/album6-justin.jpg" alt="image of justin"
+    width="300"
+    height="300">
+    <p>Changes</p>
+    <p>Price: $40.00SGD</p>
+    
+    <div class="ball-info">
+      <ul>
+        <li>16 songs</li>
+        <li>Release: 14/02/2020</li>
+        <li>Length: 47:56</li>
+        <li>Label: Def Jam; RBMG</li>
+      </ul>
+    </div>
+  
+    <button class="add-to-cart-button" data-ball-name="Justin Bieber Changes" data-ball-price="40">Add to Cart</button>
+  </div>
+
+  <div class="ball-display-box" data-category="ed" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>Ed Sheeran</h2>
+    <img src="Images/album7-ed.jpg" alt="image of ed"
+    width="300"
+    height="300">
+    <p>Divide</p>
+    <p>Price: $40.00SGD</p>
+    
+    <div class="ball-info">
+      <ul>
+        <li>16 songs</li>
+        <li>Release: 03/03/2017</li>
+        <li>Length: 46:14</li>
+        <li>Label: Asylum; Atlantic</li>
+      </ul>
+    </div>
+    
+    <button class="add-to-cart-button" data-ball-name="Ed Sheeran Divide" data-ball-price="40">Add to Cart</button>
+  </div>
+
+  <div class="ball-display-box" data-category="eminem" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>Eminem</h2>
+    <img src="Images/album8-eminem.jpg" alt="image of eminem"
+    width="300"
+    height="300">
+    <p>Kamikaze</p>
+    <p>Price: $40.00SGD</p>
+    
+    <div class="ball-info">
+      <ul>
+        <li>13 songs</li>
+        <li>Release: 31/08/2018</li>
+        <li>Length: 45:49</li>
+        <li>Label: Shady Records</li>
+      </ul>
+    </div>
+    <button class="add-to-cart-button" data-ball-name="Eminem Kamikaze" data-ball-price="40">Add to Cart</button>
+  </div>
+
+  <div class="ball-display-box" data-category="eminem" data-price="35" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>Eminem</h2>
+    <img src="Images/album9-eminem.jpg" alt="image of eminem"
+    width="300"
+    height="300">
+    <p>The Eminem Show</p>
+    <p>Price: $35.00SGD</p>
+    
+    <div class="ball-info">
+      <ul>
+        <li>19 songs</li>
+        <li>Release: 26/05/2002</li>
+        <li>Length: 77:30</li>
+        <li>Label: AFTERMATH</li>
+      </ul>
+    </div>
+
+    <button class="add-to-cart-button" data-ball-name="Eminem The Eminem Show" data-ball-price="35">Add to Cart</button>
+  </div>
+</div>
+    
+<footer class="footer">
+<div class="footer-block--newsletter">
+  <div class="footer-block__newsletter">
+    <h2 class="footer-block__heading">Sign up for our newsletter here</h2>
+    <form class="newsletter-form">
+
+    </form>
+  </div>
+</div>
+
+<div class="footer-container">
+  <div class="footer-tabs">
+    <div class="footer-pages">
+      <a href="all_album.html">ALL ALBUMS</a>
+      <a href="game_home.html">BEATBLITZ</a>
+      <a href="playlist.html">PLAYLIST</a>
+    </div>
+  </div>
+  
+  <div class="footer-content">
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Email: tec_record@gmail.com</li>
+          <li>Telephone: +65 88887777</li>
+        </ul>
+    </div>
+
+    <div class="address">
+      <h2>Music Record Shop Address</h2>
+      <p><a href="https://maps.app.goo.gl/9WRyNucXexF4U4Ux7" target="_blank">91 Bukit Batok West Ave 2, Singapore 659206</a></p>
+    </div>
+
+    <div class="community">
+      <h2>Community</h2>
+      <a href="https://www.facebook.com/StormisBowling/events/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/stormproducts/?hl=en" target="_blank">Instagram</a>
+    </div>
+
+    <div class="sponsored">
+        <h2>Sponsored By</h2>
+        <img src="Images/storm.jpg" alt="image of our sponsor's logo" width="200" height="200">
+    </div>
+
+    <div class="copyright">
+        <p>©2024 THE ECHO CHAMBER RECORD LABEL</p>
+        <p>Terms & Conditions | Privacy Policy</p>
+    </div>
+
+    <div class="footer-logo">
+        <h2>Company Logo</h2>
+        <img src="Images/logo.png" alt="image of our company logo" width="300" height="300">
+    </div>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>

@@ -97,6 +97,28 @@ Did not copy any content.
 **Media**:
 I took images from these links:
 
+Background: https://pngtree.com/freebackground/otherworldly-futuristic-corridor-electronic-dance-music-event-advanced-tech-backdrop-temporal-rift-gateway-velocity-warp-hyperspace-idea-three-dimensional-illustration_5791830.html
+
+RandomUser: https://www.giantfreakinrobot.com/ent/rick-astley-remake-never-gonna-give-you-up.html
+
+Pop: https://www.facebook.com/michaeljackson/
+
+Rock: https://www.independent.co.uk/arts-entertainment/music/features/acdc-interview-angus-brian-johnson-power-up-b1721735.html
+
+Rap: https://nypost.com/2019/10/31/new-book-reveals-eminems-triumphs-and-troubles/
+
+JPop: https://www.straitstimes.com/life/entertainment/j-pop-sensation-yoasobi-to-hold-first-singapore-concert-in-january
+
+Funk: https://en.wikipedia.org/wiki/Zapp_%28band%29
+
+Mando: https://chinesealbumart.com/gem-2023-time-ep/
+
+KPop: https://www.imdb.com/name/nm7808003/
+
+Phonk: https://www.last.fm/music/NUEKI/TIRED+OF+PROBLEMS
+
+Jazz: https://www.pbs.org/wnet/americanmasters/louis-armstrong-about-louis-armstrong/528/
+
 
 **Libraries Used**
 

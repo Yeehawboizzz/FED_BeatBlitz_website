@@ -7,6 +7,15 @@ body
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.background
+{
+  background-image: url(Images/Background2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .navbar 
@@ -14,7 +23,6 @@ body
   display: flex;
   justify-content: center;
   background-color: rgb(139, 115, 255);
-  cursor: pointer;
   transition: transform 0.3s ease-in-out;
   border-radius: 10px;
   position: relative;
@@ -69,51 +77,7 @@ body
 }
 
 /*HOMEPAGE*/
-.Gamemode1
-{
-  background-color: rgb(51, 143, 255); 
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  height: 100px;
-  width: 100px;
-  padding: 30px;
-  margin: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 10px;
-  position: relative;
-}
-
-.Gamemode1:hover 
-{
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-}
-
-.Gamemode2
-{
-  background-color: rgb(255, 68, 68); 
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  height: 100px;
-  width: 100px;
-  padding: 30px;
-  margin: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 10px;
-  position: relative;
-}
-
-.Gamemode2:hover 
-{
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-}
-
-.Admode
+.playnow
 {
   background-color: rgb(127, 69, 141); 
   background-size: cover;
@@ -129,26 +93,24 @@ body
   position: relative;
 }
 
-.Admode:hover 
+.playnow:hover 
 {
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
-.Gamemodes 
+.gametitle
 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: darkred;
-  background-image: url(Images/Background.jpg);
-  background-position: top center;
+
   gap: 70px;
   width: 100vw;
   height: 18vw;
 }
 
-.Gamemodes > p 
+.gametitle > p 
 {
   background-color: gray;
   margin: 25px;
@@ -156,67 +118,21 @@ body
   font-size: 15px;
 }
 
-.Adventure 
+.play 
 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: darkred;
-  background-image: url(Images/Background.jpg);
-  background-position: center;
   width: 100vw;
   height: 9.7vw;
 }
 
-.Adventure > p 
+.play > p 
 {
   background-color: gray;
   margin: 25px;
   padding: 30px;
   font-size: 15px;
-}
-
-.Genre
-{
-  background-color: gray; 
-  background-image: url();
-  background-size: cover;
-  background-position: center;
-  font-weight: bold;
-  height: 120px;
-  width: 120px;
-  padding: 30px;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.GenreGrid 
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-image: url(Images/Background2.jpg);
-  background-size: cover;
-  background-color: rgb(127, 69, 141);
-  width: 100vw;
-}
-
-.GenreGrid > p 
-{
-  background-color: gray;
-  margin: 25px;
-  padding: 30px;
-  font-size: 15px;
-}
-
-.top-row,
-.middle-row,
-.bottom-row 
-{
-  justify-content: center;
-  flex-direction: row;
-  display: flex;
 }
 
 /*GAMEMODE 1 & 2 DIFFICULTY*/
@@ -265,9 +181,6 @@ body
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: darkred;
-  background-image: url(Images/Background.jpg);
-  background-position: top center;
   gap: 50px;
   width: 100vw;
   height: 30vw;
@@ -279,6 +192,11 @@ body
   margin: 25px;
   padding: 30px;
   font-size: 15px;
+}
+
+.selected {
+  background-color: #b22dff; /* Darkened color for selected button */
+  color: #fff;
 }
 
 .title {
@@ -425,9 +343,6 @@ button {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: url(Images/Background2.jpg);
-  background-size: cover;
-  background-color: rgb(127, 69, 141);
   width: 100vw;
 }
 
@@ -447,18 +362,65 @@ button {
   display: flex;
 }
 
-/*HARD MODE*/
-.ansBar {
-  width: 30vw;
-  margin: 25px;
+/*RESULT PAGE*/
+.result
+{
+  background-color: rgb(51, 143, 255); 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 90px;
+  width: 100px;
   padding: 30px;
-  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
 }
 
-.ansBar > p 
+.resultGrid
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+  width: 100vw;
+  height: 18vw;
+}
+
+.resultGrid > p 
 {
   background-color: gray;
   margin: 25px;
   padding: 30px;
   font-size: 15px;
+}
+
+.leaderboard {
+  width: 80vw;
+  margin: 20px auto;
+  background-color: #a480f9;
+  border: 1px solid #332cc5;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.player {
+  display: flex;
+  gap: 70vw;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.player span {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.player .score {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
 }
