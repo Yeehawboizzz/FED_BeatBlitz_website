@@ -100,26 +100,32 @@ I took images from these links:
 
 Background:
 https://pngtree.com/freebackground/otherworldly-futuristic-corridor-electronic-dance-music-event-advanced-tech-backdrop-temporal-rift-gateway-velocity-warp-hyperspace-idea-three-dimensional-illustration_5791830.html
+DJ : https://pxhere.com/en/photo/1550901
 
-RandomUser: https://www.giantfreakinrobot.com/ent/rick-astley-remake-never-gonna-give-you-up.html
+Album1 : https://www.amazon.sg/After-Hours/dp/B084XT1P28
 
-Pop: https://www.facebook.com/michaeljackson/
+Album2 : https://medium.com/the-quaker-campus/does-1989-taylors-version-go-too-big-not-fast-enough-df68a15922e0
 
-Rock: https://www.independent.co.uk/arts-entertainment/music/features/acdc-interview-angus-brian-johnson-power-up-b1721735.html
+Album3 : https://pitchfork.com/reviews/albums/coldplay-music-of-the-spheres/
 
-Rap: https://nypost.com/2019/10/31/new-book-reveals-eminems-triumphs-and-troubles/
+Album4 : https://pitchfork.com/reviews/albums/justin-bieber-justice/
 
-JPop: https://www.straitstimes.com/life/entertainment/j-pop-sensation-yoasobi-to-hold-first-singapore-concert-in-january
+Album5 : https://the-weeknd.fandom.com/wiki/Starboy_(album)
 
-Funk: https://en.wikipedia.org/wiki/Zapp_%28band%29
+Album6 : https://www.pinterest.com/pin/683702787167546285/
 
-Mando: https://chinesealbumart.com/gem-2023-time-ep/
+Album7 : https://www.amazon.sg/Divide-Deluxe-Version-Ed-Sheeran/dp/B01MY72DNS
 
-KPop: https://www.imdb.com/name/nm7808003/
+Album8 : https://pitchfork.com/reviews/albums/eminem-kamikaze/
 
-Phonk: https://www.last.fm/music/NUEKI/TIRED+OF+PROBLEMS
+Album9 : https://www.amazon.sg/The-Eminem-Show/dp/B000066JCX 
 
-Jazz: https://www.pbs.org/wnet/americanmasters/louis-armstrong-about-louis-armstrong/528/
+AboutUs : https://www.pinterest.com/pin/766456430313128874/
+
+Sponsor : https://en.m.wikipedia.org/wiki/File:Spotify_icon.svg
+
+Beatblitz Background: https://pngtree.com/freebackground/otherworldly-futuristic-corridor-electronic-dance-music-event-advanced-tech-backdrop-temporal-rift-gateway-velocity-warp-hyperspace-idea-three-dimensional-illustration_5791830.html
+
 
 The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music-shop2c-the-echo-chamber/1-65abf34d487248d694a0c2a34adb19bd?id=tnnGeKV6BK%2bKmdPKFwkxeQ%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0
 

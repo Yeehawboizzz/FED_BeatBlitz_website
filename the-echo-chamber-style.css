@@ -456,7 +456,11 @@ body {
     z-index: 1;
   }
 
-
+/*PLAYLIST*/
+.playlist {
+  margin: 100px;
+  margin-top: 60px;
+}
 
 
 
