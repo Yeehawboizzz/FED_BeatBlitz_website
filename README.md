@@ -89,12 +89,17 @@ Website is responsive, when width hits below 767px, mobile view is activated.
 **Credits**
 
 **Content**:
-Did not copy any content.
+Embedded Spotify Playlist/Album:
+Top Hits 2023: https://open.spotify.com/album/5j0o3XQ1YciVzm7MtcFmfG?si=_4wl0JScSkuHa8P12o18MQ
+Mozart Classic: https://open.spotify.com/playlist/72oczUf02H4RGoaUBC87JQ?si=1ff2be680bce4f89
+60s 70s 80s 90s Classical Hits: https://open.spotify.com/album/4bj82rYTQLhl8xrWRySRdo?si=hYvzkFHkT26RRIq_4XitKg
+Soft Jazz: https://open.spotify.com/album/7oFOcwN0RinLbGF2X7mu6n?si=uCRvZj50SLSjFTGCzq8gsA
 
 **Media**:
 I took images from these links:
 
-Background: https://pngtree.com/freebackground/otherworldly-futuristic-corridor-electronic-dance-music-event-advanced-tech-backdrop-temporal-rift-gateway-velocity-warp-hyperspace-idea-three-dimensional-illustration_5791830.html
+Background:
+https://pngtree.com/freebackground/otherworldly-futuristic-corridor-electronic-dance-music-event-advanced-tech-backdrop-temporal-rift-gateway-velocity-warp-hyperspace-idea-three-dimensional-illustration_5791830.html
 
 RandomUser: https://www.giantfreakinrobot.com/ent/rick-astley-remake-never-gonna-give-you-up.html
 
@@ -115,6 +120,8 @@ KPop: https://www.imdb.com/name/nm7808003/
 Phonk: https://www.last.fm/music/NUEKI/TIRED+OF+PROBLEMS
 
 Jazz: https://www.pbs.org/wnet/americanmasters/louis-armstrong-about-louis-armstrong/528/
+
+The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music-shop2c-the-echo-chamber/1-65abf34d487248d694a0c2a34adb19bd?id=tnnGeKV6BK%2bKmdPKFwkxeQ%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0
 
 
 **Libraries Used**
