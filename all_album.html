@@ -38,33 +38,6 @@
     </div>
     </div>
 </nav>
-<br>
-<br>
-<br>
-<br>
-<br>
-<!--Filter Panel-->
-<div class="filter-box">
-  <label for="price">Price:</label>
-    <select id="price">
-      <option value="all">Select</option>
-      <option value="low">Low to High</option>
-      <option value="high">High to Low</option>
-    </select>
-  
-  <label for="category">Category:</label>
-    <select id="category">
-      <option value="all">All</option>
-      <option value="premier">Premier</option>
-      <option value="signature">Signature</option>
-      <option value="master">Master</option>
-      <option value="thunder">Thunder</option>
-      <option value="spare">Spare</option> 
-      <option value="service">Service</option> 
-    </select>
-</div>
-  
-<BR>
 
 <!--Shopping Cart-->
 <div id="shopping-cart-container">
@@ -97,177 +70,207 @@
 <div class="product-purchase-message" id="product-purchase-message"></div>
 <div class="fail-purchase-message" id="fail-purchase-message"></div>
 
-<!--Bowling Ball Display-->
+<!--Filter Panel-->
+<div class="filter-box">
+  <label for="price">Price:</label>
+    <select id="price">
+      <option value="all">Select</option>
+      <option value="low">Low to High</option>
+      <option value="high">High to Low</option>
+    </select>
+  
+  <label for="category">Category:</label>
+    <select id="category">
+      <option value="all">All</option>
+      <option value="weeknd">The Weeknd</option>
+      <option value="taylor">Taylor Swift</option>
+      <option value="coldplay">Coldplay</option>
+      <option value="justin">Justin Bieber</option>
+      <option value="ed">Ed Sheeran</option> 
+      <option value="eminem">Eminem</option> 
+    </select>
+</div>
+  
+<BR>
+
+<!--Album Display-->
 <div class="bowling-ball-container">
-  <div class="ball-display-box" data-category="premier" data-price="360" onmouseover="showBallInfo(this)" onmouseout="hideBallInfo(this)">
-    <h2>Storm DNA</h2>
-    <img src="Images/DNA.png" alt="image of storm DNA"
+  <div class="ball-display-box" data-category="weeknd" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>THE WEEKND</h2>
+    <img src="Images/album1-weeknd.jpg" alt="image of weeknd"
     width="300"
     height="300">
-    <p>Premier</p>
-    <p>Price: $360</p>
+    <p>After Hours</p>
+    <p>Price: $45.00SGD</p>
 
     <div class="ball-info">
       <ul>
-        <li>RG:2.48</li>
-        <li>Diff:0.053</li>
-        <li>Int Diff:0.023</li>
-        <li>Coverstock: EXO Solid</li>
+        <li>14 songs</li>
+        <li>Release: 20/03/2020</li>
+        <li>Length: 56:19</li>
+        <li>Label: XO</li>
       </ul>
     </div>
         
-    <button class="add-to-cart-button" data-ball-name="Storm DNA" data-ball-price="360">Add to Cart</button>   
+    <button class="add-to-cart-button" data-ball-name="The Weeknd After Hours" data-ball-price="45">Add to Cart</button>   
   </div>
 
-  <div class="ball-display-box" data-category="premier" data-price="350" onmouseover="showBallInfo(this)" onmouseout="hideBallInfo(this)">
-    <h2>Storm ABSOLUTE</h2>
-    <img src="Images/ABSOLUTE.png" alt="image of storm Absolute"
+  <div class="ball-display-box" data-category="taylor" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>Taylor Swift</h2>
+    <img src="Images/album2-taylor.jpg" alt="image of taylor"
     width="300"
     height="300">
-    <p>Premier</p>
-    <p>Price: $350</p>
+    <p>1989</p>
+    <p>Price: $45.00SGD</p>
         
     <div class="ball-info">
       <ul>
-        <li>RG: 2.48</li>
-        <li>Diff: 0.050</li>
-        <li>Int Diff: 0.021</li>
-        <li>Coverstock: R2S Deep Hybrid</li>
+        <li>22 songs</li>
+        <li>Release: 27/10/2023</li>
+        <li>Length: 77:49</li>
+        <li>Label: Republic Records</li>
       </ul>
     </div>
         
-    <button class="add-to-cart-button" data-ball-name="Storm Absolute" data-ball-price="350">Add to Cart</button>
+    <button class="add-to-cart-button" data-ball-name="Taylor Swift 1989" data-ball-price="45">Add to Cart</button>
   </div>
 
-  <div class="ball-display-box" data-category="signature" data-price="355" onmouseover="showBallInfo(this)" onmouseout="hideBallInfo(this)">
-    <h2>Storm Virtual Energy Black Out</h2>
-    <img src="Images/VEBO.png" alt="image of storm Virtual Energy Blackout"
+  <div class="ball-display-box" data-category="coldplay" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>Coldplay</h2>
+    <img src="Images/album3-coldplay" alt="image of coldplay"
     width="300"
     height="300">
-    <p>Signature</p>
-    <p>Price: $355</p>
+    <p>Music of the Spheres</p>
+    <p>Price: $45.00SGD</p>
       
     <div class="ball-info">
       <ul>
-        <li>RG:2.48</li>
-        <li>Diff:0.052</li>
-        <li>Coverstock: ReX Pearl</li>
+        <li>12 songs</li>
+        <li>Release: 15/10/2021</li>
+        <li>Length 41:50</li>
+        <li>Label: Parlophone; Atlantic</li>
       </ul>
     </div>
       
-    <button class="add-to-cart-button" data-ball-name="Storm Virtual Energy BlackOut" data-ball-price="355">Add to Cart</button>
+    <button class="add-to-cart-button" data-ball-name="Coldplay Music of the Spheres" data-ball-price="45">Add to Cart</button>
   </div>
 
-  <div class="ball-display-box" data-category="signature" data-price="345" onmouseover="showBallInfo(this)" onmouseout="hideBallInfo(this)" >
-    <h2>Storm Journey</h2>
-    <img src="Images/JOURNEY.png" alt="image of storm Journey"
+  <div class="ball-display-box" data-category="justin" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)" >
+    <h2>Justin Bieber</h2>
+    <img src="Images/album4-justin.jpg" alt="image of justin"
     width="300"
     height="300">
-    <p>Signature</p>
-    <p>Price: $345</p>
+    <p>Justice</p>
+    <p>Price: $45.00SGD</p>
     
     <div class="ball-info">
       <ul>
-        <li>RG:2.52</li>
-        <li>Diff:0.053</li>
-        <li>Coverstock: TX-16 Pearl</li>
+        <li>17 songs</li>
+        <li>Release: 19/03/2021</li>
+        <li>Length: 45:26</li>
+        <li>Label: Def Jam; RBMG; Schoolboy</li>
       </ul>
     </div>
 
-    <button class="add-to-cart-button" data-ball-name="Storm Journey" data-ball-price="345">Add to Cart</button>
+    <button class="add-to-cart-button" data-ball-name="Justin Bieber Justice" data-ball-price="45">Add to Cart</button>
   </div>
 
-  <div class="ball-display-box" data-category="master" data-price="340" onmouseover="showBallInfo(this)" onmouseout="hideBallInfo(this)">
-    <h2>Storm Phaze 2</h2>
-    <img src="Images/PHAZE2.png" alt="image of storm Phaze 2"
+  <div class="ball-display-box" data-category="weeknd" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>The Weeknd</h2>
+    <img src="Images/album5-weeknd.jpg" alt="image of weeknd"
     width="300"
     height="300">
-    <p>Master</p>
-    <p>Price: $340</p>
+    <p>Starboy</p>
+    <p>Price: $40.00SGD</p>
     <div class="ball-info">
       <ul>
-        <li>RG:2.48</li>
-        <li>Diff:0.051</li>
-        <li>Coverstock: TX-16 Solid</li>
+        <li>18 songs</li>
+        <li>Release: 25/11/2016</li>
+        <li>Length: 68:40</li>
+        <li>Label: XO; Republic</li>
       </ul>
     </div>
 
-    <button class="add-to-cart-button" data-ball-name="Storm Phaze 2" data-ball-price="340">Add to Cart</button>
+    <button class="add-to-cart-button" data-ball-name="The Weeknd Starboy" data-ball-price="40">Add to Cart</button>
   </div>
 
-  <div class="ball-display-box" data-category="master" data-price="320" onmouseover="showBallInfo(this)" onmouseout="hideBallInfo(this)">
-    <h2>Storm !Q Tour Edition</h2>
-    <img src="Images/IQ.png" alt="image of storm IQ"
+  <div class="ball-display-box" data-category="justin" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>Justin Bieber</h2>
+    <img src="Images/album6-justin.jpg" alt="image of justin"
     width="300"
     height="300">
-    <p>Master</p>
-    <p>Price: $320</p>
+    <p>Changes</p>
+    <p>Price: $40.00SGD</p>
     
     <div class="ball-info">
       <ul>
-        <li>RG:2.49</li>
-        <li>Diff:0.029</li>
-        <li>Coverstock: R2S Solid</li>
+        <li>16 songs</li>
+        <li>Release: 14/02/2020</li>
+        <li>Length: 47:56</li>
+        <li>Label: Def Jam; RBMG</li>
       </ul>
     </div>
   
-    <button class="add-to-cart-button" data-ball-name="Storm !Q Tour Edition" data-ball-price="320">Add to Cart</button>
+    <button class="add-to-cart-button" data-ball-name="Justin Bieber Changes" data-ball-price="40">Add to Cart</button>
   </div>
 
-  <div class="ball-display-box" data-category="thunder" data-price="310" onmouseover="showBallInfo(this)" onmouseout="hideBallInfo(this)">
-    <h2>Storm Hy-Road Pearl</h2>
-    <img src="Images/HY-ROADPEARL.png" alt="image of storm Hy-Road Pearl"
+  <div class="ball-display-box" data-category="ed" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>Ed Sheeran</h2>
+    <img src="Images/album7-ed.jpg" alt="image of ed"
     width="300"
     height="300">
-    <p>Thunder</p>
-    <p>Price: $310</p>
+    <p>Divide</p>
+    <p>Price: $40.00SGD</p>
     
     <div class="ball-info">
       <ul>
-        <li>RG:2.57</li>
-        <li>Diff:0.046</li>
-        <li>Coverstock: R2S Pearl</li>
+        <li>16 songs</li>
+        <li>Release: 03/03/2017</li>
+        <li>Length: 46:14</li>
+        <li>Label: Asylum; Atlantic</li>
       </ul>
     </div>
     
-    <button class="add-to-cart-button" data-ball-name="Storm Hy-Road Pearl" data-ball-price="310">Add to Cart</button>
+    <button class="add-to-cart-button" data-ball-name="Ed Sheeran Divide" data-ball-price="40">Add to Cart</button>
   </div>
 
-  <div class="ball-display-box" data-category="thunder" data-price="300" onmouseover="showBallInfo(this)" onmouseout="hideBallInfo(this)">
-    <h2>Storm Pitch Black</h2>
-    <img src="Images/PITCHBLACK.png" alt="image of storm Pitch Black"
+  <div class="ball-display-box" data-category="eminem" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>Eminem</h2>
+    <img src="Images/album8-eminem.jpg" alt="image of eminem"
     width="300"
     height="300">
-    <p>Thunder</p>
-    <p>Price: $300</p>
+    <p>Kamikaze</p>
+    <p>Price: $40.00SGD</p>
     
     <div class="ball-info">
       <ul>
-        <li>RG:2.57</li>
-        <li>Diff:0.022</li>
-        <li>Coverstock: Control Urethane Solid</li>
+        <li>13 songs</li>
+        <li>Release: 31/08/2018</li>
+        <li>Length: 45:49</li>
+        <li>Label: Shady Records</li>
       </ul>
     </div>
-    <button class="add-to-cart-button" data-ball-name="Storm Pitch Black" data-ball-price="300">Add to Cart</button>
+    <button class="add-to-cart-button" data-ball-name="Eminem Kamikaze" data-ball-price="40">Add to Cart</button>
   </div>
 
-  <div class="ball-display-box" data-category="spare" data-price="180" onmouseover="showBallInfo(this)" onmouseout="hideBallInfo(this)">
-    <h2>Storm ICE</h2>
-    <img src="Images/ICE.png" alt="image of storm ICE"
+  <div class="ball-display-box" data-category="eminem" data-price="35" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+    <h2>Eminem</h2>
+    <img src="Images/album9-eminem.jpg" alt="image of eminem"
     width="300"
     height="300">
-    <p>Spare</p>
-    <p>Price: $180</p>
+    <p>The Eminem Show</p>
+    <p>Price: $35.00SGD</p>
     
     <div class="ball-info">
       <ul>
-        <li>RG:2.69</li>
-        <li>Diff:0.006</li>
-        <li>Coverstock: Pearl Polyester</li>
+        <li>19 songs</li>
+        <li>Release: 26/05/2002</li>
+        <li>Length: 77:30</li>
+        <li>Label: AFTERMATH</li>
       </ul>
     </div>
 
-    <button class="add-to-cart-button" data-ball-name="Storm ICE" data-ball-price="180">Add to Cart</button>
+    <button class="add-to-cart-button" data-ball-name="Eminem The Eminem Show" data-ball-price="35">Add to Cart</button>
   </div>
 </div>
     

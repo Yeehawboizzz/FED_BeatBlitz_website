@@ -164,14 +164,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /*Hidden Details*/
-function showBallInfo(box) {
+function showAlbumInfo(box) {
     //Retrieve hidden ball information//
     const ballInfo = box.querySelector('.ball-info');
     //Display//
     ballInfo.style.display = 'block';
 }
 
-function hideBallInfo(box) {
+function hideAlbumInfo(box) {
     //Retrieve hidden ball information//
     const ballInfo = box.querySelector('.ball-info');
     //Hide//
