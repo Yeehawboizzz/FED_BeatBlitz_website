@@ -74,8 +74,8 @@
 <div class="product-purchase-message" id="product-purchase-message"></div>
 <div class="fail-purchase-message" id="fail-purchase-message"></div>
 
-<h1 class="trending"><u>TRENDING</u></h1>
 <!--Filter Panel-->
+<h1 class="trending"><u>ALL ALBUM</u></h1>
 <div class="filter-box">
   <label for="price">Price:</label>
     <select id="price">
@@ -84,7 +84,7 @@
       <option value="high">High to Low</option>
     </select>
   
-  <label for="category">Category:</label>
+  <label for="category">Artist:</label>
     <select id="category">
       <option value="all">All</option>
       <option value="weeknd">The Weeknd</option>
@@ -99,194 +99,12 @@
 <BR>
 
 <!--Album Display-->
-<div class="bowling-ball-container">
-  <div class="ball-display-box" data-category="weeknd" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
-    <h5>After Hours</h5>
-    <img src="Images/album1-weeknd.jpg" alt="image of weeknd"
-    width="300"
-    height="300">
-    <p>The Weeknd</p>
-    <p>Price: $45.00SGD</p>
-
-    <div class="ball-info">
-      <ul>
-        <li>14 songs</li>
-        <li>Release: 20/03/2020</li>
-        <li>Length: 56:19</li>
-        <li>Label: XO</li>
-      </ul>
-    </div>
-        
-    <button class="add-to-cart-button" data-ball-name="The Weeknd After Hours" data-ball-price="45">Add to Cart</button>   
-  </div>
-
-  <div class="ball-display-box" data-category="taylor" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
-    <h5>1989</h5>
-    <img src="Images/album2-taylor.jpg" alt="image of taylor"
-    width="300"
-    height="300">
-    <p>Taylor Swift</p>
-    <p>Price: $45.00SGD</p>
-        
-    <div class="ball-info">
-      <ul>
-        <li>22 songs</li>
-        <li>Release: 27/10/2023</li>
-        <li>Length: 77:49</li>
-        <li>Label: Republic Records</li>
-      </ul>
-    </div>
-        
-    <button class="add-to-cart-button" data-ball-name="Taylor Swift 1989" data-ball-price="45">Add to Cart</button>
-  </div>
-
-  <div class="ball-display-box" data-category="coldplay" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
-    <h5>Music of the Spheres</h5>
-    <img src="Images/album3-coldplay" alt="image of coldplay"
-    width="300"
-    height="300">
-    <p>Coldplay</p>
-    <p>Price: $45.00SGD</p>
-      
-    <div class="ball-info">
-      <ul>
-        <li>12 songs</li>
-        <li>Release: 15/10/2021</li>
-        <li>Length 41:50</li>
-        <li>Label: Parlophone; Atlantic</li>
-      </ul>
-    </div>
-      
-    <button class="add-to-cart-button" data-ball-name="Coldplay Music of the Spheres" data-ball-price="45">Add to Cart</button>
-  </div>
-
-  <div class="ball-display-box" data-category="justin" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)" >
-    <h5>Justice</h5>
-    <img src="Images/album4-justin.jpg" alt="image of justin"
-    width="300"
-    height="300">
-    <p>Justin Bieber</p>
-    <p>Price: $45.00SGD</p>
-    
-    <div class="ball-info">
-      <ul>
-        <li>17 songs</li>
-        <li>Release: 19/03/2021</li>
-        <li>Length: 45:26</li>
-        <li>Label: Def Jam; RBMG; Schoolboy</li>
-      </ul>
-    </div>
-
-    <button class="add-to-cart-button" data-ball-name="Justin Bieber Justice" data-ball-price="45">Add to Cart</button>
-  </div>
-
-  <div class="ball-display-box" data-category="weeknd" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
-    <h5>Starboy</h5>
-    <img src="Images/album5-weeknd.jpg" alt="image of weeknd"
-    width="300"
-    height="300">
-    <p>The Weeknd</p>
-    <p>Price: $40.00SGD</p>
-    <div class="ball-info">
-      <ul>
-        <li>18 songs</li>
-        <li>Release: 25/11/2016</li>
-        <li>Length: 68:40</li>
-        <li>Label: XO; Republic</li>
-      </ul>
-    </div>
-
-    <button class="add-to-cart-button" data-ball-name="The Weeknd Starboy" data-ball-price="40">Add to Cart</button>
-  </div>
-
-  <div class="ball-display-box" data-category="justin" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
-    <h5>Changes</h5>
-    <img src="Images/album6-justin.jpg" alt="image of justin"
-    width="300"
-    height="300">
-    <p>Justin Bieber</p>
-    <p>Price: $40.00SGD</p>
-    
-    <div class="ball-info">
-      <ul>
-        <li>16 songs</li>
-        <li>Release: 14/02/2020</li>
-        <li>Length: 47:56</li>
-        <li>Label: Def Jam; RBMG</li>
-      </ul>
-    </div>
-  
-    <button class="add-to-cart-button" data-ball-name="Justin Bieber Changes" data-ball-price="40">Add to Cart</button>
-  </div>
-
-  <div class="ball-display-box" data-category="ed" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
-    <h5>Divide</h5>
-    <img src="Images/album7-ed.jpg" alt="image of ed"
-    width="300"
-    height="300">
-    <p>Ed Sheeran</p>
-    <p>Price: $40.00SGD</p>
-    
-    <div class="ball-info">
-      <ul>
-        <li>16 songs</li>
-        <li>Release: 03/03/2017</li>
-        <li>Length: 46:14</li>
-        <li>Label: Asylum; Atlantic</li>
-      </ul>
-    </div>
-    
-    <button class="add-to-cart-button" data-ball-name="Ed Sheeran Divide" data-ball-price="40">Add to Cart</button>
-  </div>
-
-  <div class="ball-display-box" data-category="eminem" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
-    <h5>Kamikaze</h5>
-    <img src="Images/album8-eminem.jpg" alt="image of eminem"
-    width="300"
-    height="300">
-    <p>Eminem</p>
-    <p>Price: $40.00SGD</p>
-    
-    <div class="ball-info">
-      <ul>
-        <li>13 songs</li>
-        <li>Release: 31/08/2018</li>
-        <li>Length: 45:49</li>
-        <li>Label: Shady Records</li>
-      </ul>
-    </div>
-    <button class="add-to-cart-button" data-ball-name="Eminem Kamikaze" data-ball-price="40">Add to Cart</button>
-  </div>
-
-  <div class="ball-display-box" data-category="eminem" data-price="35" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
-    <h5>The Eminem Show</h5>
-    <img src="Images/album9-eminem.jpg" alt="image of eminem"
-    width="300"
-    height="300">
-    <p>Eminem</p>
-    <p>Price: $35.00SGD</p>
-    
-    <div class="ball-info">
-      <ul>
-        <li>19 songs</li>
-        <li>Release: 26/05/2002</li>
-        <li>Length: 77:30</li>
-        <li>Label: AFTERMATH</li>
-      </ul>
-    </div>
-
-    <button class="add-to-cart-button" data-ball-name="Eminem The Eminem Show" data-ball-price="35">Add to Cart</button>
-  </div>
-</div>
-
-
-<h1 class="title"><u>ALL ALBUM</u></h1>
 <div class="container text-center">
   <div class="row row-cols-4">
   
       <div class="col">
         <div class="card" style="width: 15rem;">
-        <div data-category="weeknd" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+        <div class="ball-display-box" data-category="weeknd" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
           <img src="Images/album1-weeknd.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">THE WEEKND</h5>
@@ -309,7 +127,7 @@
   
       <div class="col">
         <div class="card" style="width: 15rem;">
-        <div data-category="taylor" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+        <div class="ball-display-box" data-category="taylor" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
           <img src="Images/album2-taylor.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">TAYLOR SWIFT</h5>
@@ -332,7 +150,7 @@
   
       <div class="col">
         <div class="card" style="width: 15rem;">
-          <div data-category="coldplay" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+          <div class="ball-display-box" data-category="coldplay" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
             <img src="Images/album3-coldplay" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">COLDPLAY</h5>
@@ -355,7 +173,7 @@
   
       <div class="col">
         <div class="card" style="width: 15rem;">
-          <div data-category="justin" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+          <div class="ball-display-box" data-category="justin" data-price="45" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
             <img src="Images/album4-justin.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">JUSTIN BIEBER</h5>
@@ -384,7 +202,7 @@
   
     <div class="col">
       <div class="card" style="width: 15rem;">
-        <div data-category="weeknd" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+        <div class="ball-display-box" data-category="weeknd" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
           <img src="Images/album5-weeknd.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">THE WEEKND</h5>
@@ -407,7 +225,7 @@
   
       <div class="col">
         <div class="card" style="width: 15rem;">
-        <div data-category="justin" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+        <div class="ball-display-box" data-category="justin" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
           <img src="Images/album6-justin.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">JUSTIN BIEBER</h5>
@@ -430,7 +248,7 @@
   
       <div class="col">
         <div class="card" style="width: 15rem;">
-          <div data-category="ed" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+          <div class="ball-display-box" data-category="ed" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
             <img src="Images/album7-ed.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">ED SHEERAN</h5>
@@ -453,7 +271,7 @@
   
       <div class="col">
         <div class="card" style="width: 15rem;">
-          <div data-category="eminem" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+          <div class="ball-display-box" data-category="eminem" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
             <img src="Images/album8-eminem.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">EMINEM</h5>
@@ -482,7 +300,7 @@
   
     <div class="col">
       <div class="card" style="width: 15rem;">
-        <div data-category="eminem" data-price="35" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+        <div class="ball-display-box" data-category="eminem" data-price="35" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
           <img src="Images/album9-eminem.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">EMINEM</h5>
@@ -505,7 +323,7 @@
   
       <div class="col">
         <div class="card" style="width: 15rem;">
-        <div data-category="justin" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+        <div class="ball-display-box" data-category="justin" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
           <img src="Images/album6-justin.jpg" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">JUSTIN BIEBER</h5>
@@ -528,7 +346,7 @@
   
       <div class="col">
         <div class="card" style="width: 15rem;">
-          <div data-category="ed" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+          <div class="ball-display-box" data-category="ed" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
             <img src="Images/album7-ed.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">ED SHEERAN</h5>
@@ -551,7 +369,7 @@
   
       <div class="col">
         <div class="card" style="width: 15rem;">
-          <div data-category="eminem" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
+          <div class="ball-display-box" data-category="eminem" data-price="40" onmouseover="showAlbumInfo(this)" onmouseout="hideAlbumInfo(this)">
             <img src="Images/album8-eminem.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">EMINEM</h5>
