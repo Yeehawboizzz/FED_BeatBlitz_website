@@ -231,7 +231,7 @@ body {
     border: 1px solid #a2a2a2;
     margin: 0;
     background-color: #c9c9c9;
-    margin-top: 110px;
+    margin-top: 20px;
     }
     
   .filter-box label {
@@ -389,6 +389,15 @@ body {
     box-sizing: border-box;
     background-color: rgb(255, 255, 255); 
   }
+
+  .trending {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: 130px;
+    flex-wrap: wrap;
+}
   
   .bowling-ball-container {
     display: grid;
