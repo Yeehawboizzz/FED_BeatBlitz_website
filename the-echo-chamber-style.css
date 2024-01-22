@@ -253,6 +253,7 @@ body {
     font-size: 18px; 
     padding: 10px 20px; 
     background-color: #dbdbdb;
+    width: 200px;
   }
   
   .add-to-cart-button:hover {
@@ -452,7 +453,7 @@ body {
   
   /*Hidden Additional Ball Info Box*/
   .ball-info {
-    display: none;
+    
     position: absolute;
     top: 100%;
     left: 50%;
@@ -470,6 +471,70 @@ body {
   margin-top: 60px;
 }
 
+
+
+
+
+.ball-display-box {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #a2a2a2;
+  box-sizing: border-box;
+  position: relative;
+  transition: transform 0.3s ease-in-out; 
+  margin: 5px;
+}
+
+.ball-display-box .content {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.ball-display-box .front,
+.ball-display-box .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+  transition: transform 0.3s linear;
+}
+
+.ball-display-box .front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.ball-display-box .back {
+  transform: rotateY(180deg);
+}
+
+.ball-display-box:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.ball-display-box:hover .back {
+  transform: rotateY(0deg);
+}
+
+.ball-display-box li{
+  font-size: 19px;
+  text-align: left;
+  padding-left: 55px;
+}
+
+.ball-display-box img{
+  margin-bottom: 10px;
+}
+
+.ball-info li{
+  text-align: left;
+  padding-right: 30px;
+  white-space: nowrap;
+}
 
 
 

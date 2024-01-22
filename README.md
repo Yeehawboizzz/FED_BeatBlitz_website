@@ -32,18 +32,43 @@ https://www.figma.com/file/XPPq3BGMSMXN7iMKS2qmLv/FED-BeatBlitz?type=design&node
 
 
 **Features**
-
 Website Contains X Main Pages:
 
 **Page 1: Index Page (Home)**
+- Nav Bar (Company Name & Logo, All Albums, Playlist, BeatBlitz)
 
+- Main Image with Company Vision Box and Shop Now Button in the center
+
+- 4 New Arrival Albums Featured (Shop Now Button leads to All Albums Page)
+
+- The Echo Chamber Origin Picture and Short Paragraph
+
+- Sign Up Box for NewsLetter (Includes Validation)
+
+- Footer (Contact Us: Email & Tel, Community: FB/IG, Sponsored By: Spotify, Company Logo, Shop Address)
 
 **Page 2: All Albums Shop Page**
+- Nav Bar (Company Name & Logo, All Albums, Playlist, BeatBlitz)
 
+- Trending Albums features the best selling albums, display box is bigger (3 per row) and on top.
+- All Albums features all albums sold in the shop, display box is smaller and more concised (4 per row) below the trending albums.
+
+- Albums Display: For each album display box, when mouse hovers over, a small box will appear showing more details about the album (Number of Songs, Release Date, Length of Album, Labels). Each album box also has an "Add to Cart" Button, when pressed, the button changes to "Item Added to Cart" for 2s before it changes back. The shopping cart will update accordingly as well.
+
+- Shopping Cart: The shopping cart is able to expand and close, when open, it displays the items added to cart in a table (Product Name, Quantity, Price). As more items are added, the quantity, price and total price will be updated in the cart. There is also a Buy Button, when pressed, a message saying Purchase Successful will be shown and cart clears. When you refresh the page, the cart contents will not be cleared until your press clear cart or buy. This is due to items being added to local storage when added to cart and deleted from local storage when press buy or clear cart.
+
+- Filter Panel: The filter panel is able to filter albums based on artist as well as sort them based on price High to Low or vice versa. When filtered, the irrelevant albums will be hidden in the page.
+
+- Sign Up Box for NewsLetter (Includes Validation)
+
+- Footer (Contact Us: Email & Tel, Community: FB/IG, Sponsored By: Spotify, Company Logo, Shop Address)
 
 **Page 3: Playlists Page**
+- Nav Bar (Company Name & Logo, All Albums, Playlist, BeatBlitz)
 
+- Sign Up Box for NewsLetter (Includes Validation)
 
+- Footer (Contact Us: Email & Tel, Community: FB/IG, Sponsored By: Spotify, Company Logo, Shop Address)
 **Page 4: BeatBlitz Start Page**
 
 
@@ -61,6 +86,22 @@ Website Contains X Main Pages:
 
 
 **Testing**
+**Page 1: Index Page (Home)**
+
+
+**Page 2: All Albums Shop Page**
+
+
+**Page 3: Playlists Page**
+
+
+**Page 4: BeatBlitz Start Page**
+
+
+**Page 5: BeatBlitz Game Page**
+
+
+**Page 6: BeatBlitz Score Page**
 
 
 **Responsiveness (Mobile View)**
