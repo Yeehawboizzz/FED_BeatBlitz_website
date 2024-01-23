@@ -1,138 +1,92 @@
-/*GENERAL USE*/
+/*HOMEPAGE*/
 body 
 {
-  color: white;
-  overflow-x: hidden;
-  background-color: rgb(80, 66, 123);
-  height: 100%;
   margin: 0;
-  padding: 0;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.background
+.screen
 {
-  background-image: url(Images/Background2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.navbar 
-{
-  display: flex;
-  justify-content: center;
-  background-color: rgb(139, 115, 255);
-  transition: transform 0.3s ease-in-out;
-  border-radius: 10px;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
   position: relative;
-}
-
-.navbar:hover 
-{
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-}
-
-.navbar > p 
-{
-  margin: 10px;
-  padding: 10px;
-  font-size: 15px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add this line */
-}
-
-.navbar>p:hover {
-  background-color: red; /* Add this block */
-  color: rgb(31, 81, 167); /* Add this block */
-}
-  
-.footer-container {
-  background-color: rgb(31, 81, 167);
-  color: white;
-  padding: 20px;
-  text-align: center;
-  position: relative;
-}
-  
-.footer-content {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-size: 20px;
+  justify-content: start;
+  align-items: center;
 }
-  
-.copyright {
+
+img
+{
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  text-align: right;
-  padding: 10px;
-  font-size: 15px;
-}
-  
-.copyright > p {
-  margin: 5px 0;
-  color: white;
+  min-width: 100vh;
+  min-height: 100vh;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
-/*HOMEPAGE*/
-.playnow
+audio
 {
-  background-color: rgb(127, 69, 141); 
-  background-size: cover;
-  position: center;
+  display: none;
+}
+
+.menu
+{
+  color: #fff;
+  margin-left: 4em;
+  text-transform: uppercase;
+}
+
+.menu h1
+{
+  font-size: 4em;
+  letter-spacing: 30px;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.menu h3
+{
+  font-weight: 300;
+  font-size: 2.5em;
   text-align: center;
-  height: 20px;
-  width: 150px;
-  padding: 30px;
-  margin: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 10px;
+  letter-spacing: 10px;
   position: relative;
 }
 
-.playnow:hover 
+.menu ul
 {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  list-style: none;
+  padding: 0;
 }
 
-.gametitle
+.menu li
 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  gap: 70px;
-  width: 100vw;
-  height: 18vw;
+  margin: 1em 0;
 }
 
-.gametitle > p 
+.menu li a
 {
-  background-color: gray;
-  margin: 25px;
-  padding: 30px;
-  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
 }
 
-.play 
+#sound
 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100vw;
-  height: 9.7vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 1em;
+  color: #fff;
+  cursor: pointer;
 }
 
-.play > p 
-{
-  background-color: gray;
-  margin: 25px;
-  padding: 30px;
-  font-size: 15px;
+.menu li a:hover,
+#sound:hover{
+  color: #dbdbdb;
 }
 
 /*GAMEMODE 1 & 2 DIFFICULTY*/
