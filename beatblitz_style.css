@@ -32,6 +32,11 @@ audio
   display: none;
 }
 
+#playPauseButton {
+  color: darkred;
+  cursor: pointer;
+}
+
 .menu
 {
   color: #fff;
