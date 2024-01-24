@@ -520,3 +520,59 @@ body {
     margin: 5rem 0 3rem;
 }
 }
+
+@media screen and (max-width: 767px) {
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-pages {
+    flex-direction: column;
+  }
+
+  .footer-pages a {
+    margin: 5px 0;
+  }
+
+  .contact-info,
+  .address,
+  .community,
+  .sponsored,
+  .footer-logo,
+  .copyright {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer-logo img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+
+  /* Homepage */
+  .welcome-container {
+    padding: 10px;
+  }
+
+  .banner_heading {
+    font-size: 1.5rem;
+  }
+
+  .buttons {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .about_us {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left img {
+    width: 100%;
+    height: auto;
+  }
+}
