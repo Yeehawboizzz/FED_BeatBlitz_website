@@ -139,8 +139,6 @@ Soft Jazz: https://open.spotify.com/album/7oFOcwN0RinLbGF2X7mu6n?si=uCRvZj50SLSj
 **Media**:
 I took images from these links:
 
-Background:
-https://pngtree.com/freebackground/otherworldly-futuristic-corridor-electronic-dance-music-event-advanced-tech-backdrop-temporal-rift-gateway-velocity-warp-hyperspace-idea-three-dimensional-illustration_5791830.html
 DJ : https://pxhere.com/en/photo/1550901
 
 Album1 : https://www.amazon.sg/After-Hours/dp/B084XT1P28
@@ -161,11 +159,19 @@ Album8 : https://pitchfork.com/reviews/albums/eminem-kamikaze/
 
 Album9 : https://www.amazon.sg/The-Eminem-Show/dp/B000066JCX 
 
+Album10: https://www.amazon.sg/Four-CD-One-Direction/dp/B09YBXQCTG
+
+Album11: https://musicbrainz.org/release/d0cb6120-ad2e-4694-847f-664083bdc0e4
+
+Album12: https://www.windmill-records.co.uk/elvis-presley---elvis-now-sf-8266-2531-p.asp
+
 AboutUs : https://www.pinterest.com/pin/766456430313128874/
 
 Sponsor : https://en.m.wikipedia.org/wiki/File:Spotify_icon.svg
 
-Beatblitz Background: https://pngtree.com/freebackground/otherworldly-futuristic-corridor-electronic-dance-music-event-advanced-tech-backdrop-temporal-rift-gateway-velocity-warp-hyperspace-idea-three-dimensional-illustration_5791830.html
+Beatblitz Background: https://rarible.com/rhythmandstealth/owned
+
+Beatblitz Audio: https://www.youtube.com/watch?v=UtXWe5oa3U8&ab_channel=WeAreMagonia
 
 
 The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music-shop2c-the-echo-chamber/1-65abf34d487248d694a0c2a34adb19bd?id=tnnGeKV6BK%2bKmdPKFwkxeQ%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0
@@ -180,7 +186,7 @@ The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music
 
 
 **API Used**
-
+Open Trivia Database API
 
 
 **Acknowledgements**:
