@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const _question = document.getElementById('question');
     const _options = document.querySelector('.quiz-options');
     const _checkBtn = document.getElementById('check-answer');
-    const _playAgainBtn = document.getElementById('play-again');
+    const _backHomeBtn = document.getElementById('back-home');
     const _result = document.getElementById('result');
     const _correctScore = document.getElementById('correct-score');
     const _totalQuestion = document.getElementById('total-question');
@@ -21,7 +21,7 @@ async function loadQuestion(){
 // event listeners
 function eventListeners(){
     _checkBtn.addEventListener('click', checkAnswer);
-    _playAgainBtn.addEventListener('click', restartQuiz);
+    _backHomeBtn.addEventListener('click', backHome);
 }
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -100,7 +100,7 @@ function checkCount(){
 
 
         _result.innerHTML += `<p>Your score is ${correctScore}.</p>`;
-        _playAgainBtn.style.display = "block";
+        _backHomeBtn.style.display = "block";
         _checkBtn.style.display = "none";
     } else {
         setTimeout(function(){
@@ -115,13 +115,8 @@ function setCount(){
 }
 
 
-function restartQuiz(){
-    correctScore = askedCount = 0;
-    _playAgainBtn.style.display = "none";
-    _checkBtn.style.display = "block";
-    _checkBtn.disabled = false;
-    setCount();
-    loadQuestion();
+function backHome(){
+    window.location.href = 'game_home.html';
 }
 
 loadQuestion();

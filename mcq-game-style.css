@@ -120,7 +120,7 @@ body{
 .quiz-foot button:active{
     transform: scale(0.95);
 }
-#play-again{
+#back-home{
     display: none;
 }
 #result{
