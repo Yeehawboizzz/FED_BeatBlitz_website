@@ -6,55 +6,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BEATBLITZ</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link href="beatblitz_style.css" rel="stylesheet" type="text/css">
+<link href="mcq-game-style.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-<script src="countdown.js"></script>
-<script src="easymode.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="game.js"></script>
 </head>
 
-<body onload="move()" class="background">
-<a href="index.html" style="text-decoration: none; color: inherit;">
-    <nav class="navbar"><h1>BEATBLITZ</h1></nav>
-</a>
-
-<div id="countdown-container">
-    <div id="countdown-bar"></div>
-    <div id="countdown-text">10 seconds</div>
-</div>
-
-<div class="question">
-    <p style="color: black;">Annie are you ____</p>
-</div>
-
-<div class="ansGrid">
-    <div class="top">
-        <button class="answers">stupid</button>
-        <button class="answers">okay</button>
-    </div>
-
-    <div class="bottom">
-        <button class="answers">alright</button>
-        <button class="answers">sleeping</button>
-    </div>
-</div>
-
-<footer class="footer-container">
-<div class="footer-content">
-    <div>
-    <p>STORY:<BR>
-        Mr Hee Hee was angry that his wife cheated on him, but he pretended nothing happened.<br>
-        And so he asked ...
-    </p>
-    </div>
+<body class = "flex background">
     
-    <div class="copyright">
-        <p>©2024 BeatBlitz</p>
-        <p>Terms & Conditions | Privacy Policy</p>
+    <div class = "wrapper">
+        <div class = "quiz-container">
+            <div class = "quiz-head">
+                <h1 class = "quiz-title">Quiz Game</h1>
+                <div class = "quiz-score flex">
+                    <span id = "correct-score">0</span>/<span id = "total-question">10</span>
+                </div>
+            </div>
+            <div class = "quiz-body">
+                <h2 class = "quiz-question" id = "question"><!--What is the full form of HTTP?--></h2>
+                <ul class = "quiz-options">
+                    <!--<li>1. Hyper text transfer package</li>
+                    <li>2. Hyper text transfer protocol</li>
+                    <li>3. Hyphenation text test program</li>
+                    <li>4. None of the above</li>-->
+                </ul>
+                <div id = "result">
+                </div>
+            </div>
+            <div class = "quiz-foot">
+                <button type = "button" id = "check-answer">Check Answer</button>
+                <button type = "button" id = "play-again">Play Again!</button>
+            </div>
+        </div>
     </div>
-</div>
-</footer>
-    
+
+
 </body>
 </html>

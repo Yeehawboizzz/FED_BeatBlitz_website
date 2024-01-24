@@ -1,51 +1,152 @@
-async function fetchLyrics() {
-    const url = 'https://genius-song-lyrics1.p.rapidapi.com/song/lyrics/?id=2396871';
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '4b560486ffmsh569cae16ff8fdebp1b38b9jsn7ec27ebd149e',
-            'X-RapidAPI-Host': 'genius-song-lyrics1.p.rapidapi.com'
-        }
-    };
+document.addEventListener('DOMContentLoaded', function(){
+    const _question = document.getElementById('question');
+    const _options = document.querySelector('.quiz-options');
+    const _checkBtn = document.getElementById('check-answer');
+    const _playAgainBtn = document.getElementById('play-again');
+    const _result = document.getElementById('result');
+    const _correctScore = document.getElementById('correct-score');
+    const _totalQuestion = document.getElementById('total-question');
 
-    try {
-        const response = await fetch(url, options);
-        const result = await response.json(); // Assuming the API returns JSON
-        const lyrics = result.lyrics; // Assuming the lyrics are in a 'lyrics' property
+    let correctAnswer = "", correctScore = askedCount = 0, totalQuestion = 10;
 
-        // Use the lyrics to generate a question
-        const question = document.querySelector('.question p');
-        const lyricsArray = lyrics.split(' ');
-        const blankIndex = Math.floor(Math.random() * lyricsArray.length);
-        const correctAnswer = lyricsArray[blankIndex];
-        lyricsArray[blankIndex] = '____';
-        question.textContent = lyricsArray.join(' ');
+// load question from API
+async function loadQuestion(){
+    const APIUrl = 'https://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple';
+    const result = await fetch(`${APIUrl}`)
+    const data = await result.json();
+    _result.innerHTML = "";
+    showQuestion(data.results[0]);
+}
 
-        // Use the lyrics to generate answers
-        const answers = document.querySelectorAll('.answers');
-        const incorrectAnswers = ['stupid', 'okay', 'alright', 'sleeping']; // Replace this with your own logic
-        answers.forEach((answerElement, index) => {
-            if (index === 0) {
-                // The first answer is the correct one
-                answerElement.textContent = correctAnswer;
-            } else {
-                // The other answers are incorrect
-                answerElement.textContent = incorrectAnswers[index - 1];
+// event listeners
+function eventListeners(){
+    _checkBtn.addEventListener('click', checkAnswer);
+    _playAgainBtn.addEventListener('click', restartQuiz);
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+    loadQuestion();
+    eventListeners();
+    _totalQuestion.textContent = totalQuestion;
+    _correctScore.textContent = correctScore;
+});
+
+
+// display question and options
+function showQuestion(data){
+    _checkBtn.disabled = false;
+    correctAnswer = data.correct_answer;
+    let incorrectAnswer = data.incorrect_answers;
+    let optionsList = incorrectAnswer;
+    optionsList.splice(Math.floor(Math.random() * (incorrectAnswer.length + 1)), 0, correctAnswer);
+    // console.log(correctAnswer);
+
+    
+    _question.innerHTML = `${data.question} <br> <span class = "category"> ${data.category} </span>`;
+    _options.innerHTML = `
+        ${optionsList.map((option, index) => `
+            <li> ${index + 1}. <span>${option}</span> </li>
+        `).join('')}
+    `;
+    selectOption();
+}
+
+
+// options selection
+function selectOption(){
+    _options.querySelectorAll('li').forEach(function(option){
+        option.addEventListener('click', function(){
+            if(_options.querySelector('.selected')){
+                const activeOption = _options.querySelector('.selected');
+                activeOption.classList.remove('selected');
             }
-
-            // Add event listeners to the answers
-            answerElement.addEventListener('click', () => {
-                // Check if the answer is correct and update the quiz
-                if (answerElement.textContent === correctAnswer) {
-                    answerElement.style.backgroundColor = 'green';
-                } else {
-                    answerElement.style.backgroundColor = 'red';
-                }
-            });
+            option.classList.add('selected');
         });
-    } catch (error) {
-        console.error(error);
+    });
+}
+
+// answer checking
+function checkAnswer(){
+    _checkBtn.disabled = true;
+    if(_options.querySelector('.selected')){
+        let selectedAnswer = _options.querySelector('.selected span').textContent;
+        if(selectedAnswer == HTMLDecode(correctAnswer)){
+            correctScore++;
+            _result.innerHTML = `<p><i class = "fas fa-check"></i>Correct Answer!</p>`;
+        } else {
+            _result.innerHTML = `<p><i class = "fas fa-times"></i>Incorrect Answer!</p> <small><b>Correct Answer: </b>${correctAnswer}</small>`;
+        }
+        checkCount();
+    } else {
+        _result.innerHTML = `<p><i class = "fas fa-question"></i>Please select an option!</p>`;
+        _checkBtn.disabled = false;
     }
 }
 
-fetchLyrics();
+// to convert html entities into normal text of correct answer if there is any
+function HTMLDecode(textString) {
+    let doc = new DOMParser().parseFromString(textString, "text/html");
+    return doc.documentElement.textContent;
+}
+
+
+function checkCount(){
+    askedCount++;
+    setCount();
+    if(askedCount == totalQuestion){
+        setTimeout(function(){
+            console.log("");
+        }, 5000);
+
+
+        _result.innerHTML += `<p>Your score is ${correctScore}.</p>`;
+        _playAgainBtn.style.display = "block";
+        _checkBtn.style.display = "none";
+    } else {
+        setTimeout(function(){
+            loadQuestion();
+        }, 300);
+    }
+}
+
+function setCount(){
+    _totalQuestion.textContent = totalQuestion;
+    _correctScore.textContent = correctScore;
+}
+
+
+function restartQuiz(){
+    correctScore = askedCount = 0;
+    _playAgainBtn.style.display = "none";
+    _checkBtn.style.display = "block";
+    _checkBtn.disabled = false;
+    setCount();
+    loadQuestion();
+}
+
+loadQuestion();
+    eventListeners();
+    _totalQuestion.textContent = totalQuestion;
+    _correctScore.textContent = correctScore;
+});
+
+async function loadQuestion() {
+    const APIUrl = 'https://opentdb.com/api.php?amount=10&category=12&difficulty=medium&type=multiple';
+    const result = await fetch(`${APIUrl}`);
+    
+    try {
+        const data = await result.json();
+
+        // Check if data.results exists and has at least one item
+        if (data.results && data.results.length > 0) {
+            _result.innerHTML = "";
+            showQuestion(data.results[0]);
+        } else {
+            console.error('No questions found in the API response.');
+            // You might want to handle this case, such as showing an error message or taking appropriate action.
+        }
+    } catch (error) {
+        console.error('Error parsing JSON from the API response.', error);
+        // Handle the error, for example, show an error message or take appropriate action.
+    }
+}
