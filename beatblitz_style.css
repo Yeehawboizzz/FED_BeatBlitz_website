@@ -94,6 +94,28 @@ audio
   color: #dbdbdb;
 }
 
+/*LOADING*/
+.loading
+{
+  background-color: black;
+  justify-content: center;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 10px;
+}
+
+#animation-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tips
+{
+  margin-top: 500px;
+}
+
 /*GAMEMODE 1 & 2 DIFFICULTY*/
 .Easy
 {
