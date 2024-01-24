@@ -237,7 +237,7 @@ body {
   
   #shopping-cart-container {
     position: fixed;
-    top: 10px;
+    top: 110px;
     right: 10px;
     padding: 15px;
     background-color: #b1b1b1;
@@ -356,13 +356,19 @@ body {
     z-index: 1000; 
   }
   
-  /*Bowling Ball Display*/
+  /*Album Display*/
   body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255); 
+  }
+
+  .category-icon {
+    background-image: url(Images/category-icon.jpg);
+    width: 25px;
+    height: 25px;
   }
 
   .albumtitle {
@@ -372,7 +378,7 @@ body {
     gap: 1rem;
     margin-top: 130px;
     flex-wrap: wrap;
-}
+  }
   
   .bowling-ball-container {
     display: grid;
@@ -513,10 +519,6 @@ body {
 @media screen and (min-width: 990px){
 .title {
     align-items: center;
-}
-}
-@media screen and (min-width: 990px){
-.title {
     margin: 5rem 0 3rem;
 }
 }
@@ -538,6 +540,12 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #shopping-cart-container {
+    margin-top: 60px;
   }
 }
 
@@ -610,4 +618,28 @@ body {
   .card {
     font-size: larger;
   }
+
+  /*All Album*/
+
+  #shopping-cart-container {
+    padding: 10px;
+  }
+
+  #cart-popup {
+    min-width: 80%;
+  }
+
+  .albumtitle {
+    text-align: left;
+    justify-content: left;
+    align-items: start;
+    margin: 20px;
+    margin-top: 50px;
+  }
+
+  #new {
+    margin-left: 50px;
+    margin-top: 130px;
+  }
 }
+
