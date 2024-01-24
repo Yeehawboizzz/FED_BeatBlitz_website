@@ -36,15 +36,10 @@ Website Contains X Main Pages:
 
 **Page 1: Index Page (Home)**
 - Nav Bar (Company Name & Logo, All Albums, Playlist, BeatBlitz)
-
 - Main Image with Company Vision Box and Shop Now Button in the center
-
 - 4 New Arrival Albums Featured (Shop Now Button leads to All Albums Page)
-
-- The Echo Chamber Origin Picture and Short Paragraph
-
-- Sign Up Box for NewsLetter (Includes Validation)
-
+- The Echo Chamber origin picture and short description
+- Sign up box prompting user for Email for NewsLetter  (Includes Validation)
 - Footer (Contact Us: Email & Tel, Community: FB/IG, Sponsored By: Spotify, Company Logo, Shop Address)
 
 **Page 2: All Albums Shop Page**
@@ -57,25 +52,38 @@ Website Contains X Main Pages:
 
 - Shopping Cart: The shopping cart is able to expand and close, when open, it displays the items added to cart in a table (Product Name, Quantity, Price). As more items are added, the quantity, price and total price will be updated in the cart. There is also a Buy Button, when pressed, a message saying Purchase Successful will be shown and cart clears. When you refresh the page, the cart contents will not be cleared until your press clear cart or buy. This is due to items being added to local storage when added to cart and deleted from local storage when press buy or clear cart.
 
-- Filter Panel: The filter panel is able to filter albums based on artist as well as sort them based on price High to Low or vice versa. When filtered, the irrelevant albums will be hidden in the page.
+- Control Panel: The control panel consist of options: 
+1. NEW ARRIVAL
+2. ALL TIME FAVOURITE
+3. GOOD OLD TIMES
 
-- Sign Up Box for NewsLetter (Includes Validation)
+ When user selects any option, the website page will fast forward up or down to the section that displays the album of the selected choice.
 
+- Sign up box prompting user for Email for NewsLetter  (Includes Validation)
 - Footer (Contact Us: Email & Tel, Community: FB/IG, Sponsored By: Spotify, Company Logo, Shop Address)
 
 **Page 3: Playlists Page**
 - Nav Bar (Company Name & Logo, All Albums, Playlist, BeatBlitz)
+- Main Featured Playlist: YEEHAWBOOMBASTIC + Description
+- 4 Playlists: 60s-90s, Top Hits 2023, Classical Music, Cozy Jazz
+- All 5 Playlist has a "Listen Now" button that links to an individualised Playlist Page
 
-- Sign Up Box for NewsLetter (Includes Validation)
+- Each individualised Playlist Page contains an Description + Spotify iframe of the playlist, allowing user to browse and play music or open Spotify in a new tab.
 
+- Sign up box prompting user for Email for NewsLetter  (Includes Validation)
 - Footer (Contact Us: Email & Tel, Community: FB/IG, Sponsored By: Spotify, Company Logo, Shop Address)
-**Page 4: BeatBlitz Start Page**
 
+**Page 4: BeatBlitz Home Page**
+- Futuristic Background Image with BeatBlitz Title
+- Start Game and Back to TEC Options
+- Rhyhtem Button when pressed, plays soundtrack.
 
-**Page 5: BeatBlitz Game Page**
+**Page 5: BeatBlitz Loading Screen Page**
+- After pressing Start Game, a black loading page with Lottie Animation of a spinning cube for 5 seconds before going into the actual game page.
 
+- In the loading screen, there is a line of Tip for players to refer.
 
-**Page 6: BeatBlitz Score Page**
+**Page 6: BeatBlitz Game Page**
 
 
 
@@ -172,7 +180,6 @@ Sponsor : https://en.m.wikipedia.org/wiki/File:Spotify_icon.svg
 Beatblitz Background: https://rarible.com/rhythmandstealth/owned
 
 Beatblitz Audio: https://www.youtube.com/watch?v=UtXWe5oa3U8&ab_channel=WeAreMagonia
-
 
 The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music-shop2c-the-echo-chamber/1-65abf34d487248d694a0c2a34adb19bd?id=tnnGeKV6BK%2bKmdPKFwkxeQ%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0
 
