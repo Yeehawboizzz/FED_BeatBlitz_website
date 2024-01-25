@@ -551,6 +551,11 @@ body {
   #yeehaw {
     margin: 30px;
   }
+
+  #yeehaw-playlist {
+    top: 0;
+    align-self: center;
+  }
 }
 
 @media screen and (max-width: 991px) {

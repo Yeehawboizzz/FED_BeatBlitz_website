@@ -44,6 +44,7 @@ body
 
 img
 {
+  object-fit: cover;
   position: absolute;
   min-width: 100vh;
   min-height: 100vh;
@@ -273,4 +274,32 @@ button {
   justify-content: center;
   flex-direction: column;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    margin-left: 2em;
+  }
+
+  .menu h1 {
+    font-size: 3em;
+    letter-spacing: 10px;
+  }
+
+  .menu h3 {
+    display: none;
+  }
+
+  .menu ul
+  {
+    text-align: center;
+    font-size: larger;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  #tips {
+    display: none;
+  }
 }
