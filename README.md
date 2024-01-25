@@ -175,13 +175,15 @@ Album12: https://www.windmill-records.co.uk/elvis-presley---elvis-now-sf-8266-25
 
 Category-Icon: https://www.vecteezy.com/vector-art/26529565-music-note-silhouette-icon-music-symbol-and-rhythm-vector
 
-AboutUs : https://www.pinterest.com/pin/766456430313128874/
+AboutUs: https://www.pinterest.com/pin/766456430313128874/
 
-Sponsor : https://en.m.wikipedia.org/wiki/File:Spotify_icon.svg
+Sponsor: https://en.m.wikipedia.org/wiki/File:Spotify_icon.svg
 
 Beatblitz Background: https://rarible.com/rhythmandstealth/owned
 
 Beatblitz Audio: https://www.youtube.com/watch?v=UtXWe5oa3U8&ab_channel=WeAreMagonia
+
+Beatblitz Game Background: https://pngtree.com/freebackground/game-red-outer-space_2444899.html
 
 The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music-shop2c-the-echo-chamber/1-65abf34d487248d694a0c2a34adb19bd?id=tnnGeKV6BK%2bKmdPKFwkxeQ%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0
 
