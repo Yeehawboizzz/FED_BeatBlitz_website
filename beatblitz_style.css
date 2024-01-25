@@ -147,7 +147,7 @@ audio
 }
 
 /*CHARACTER CUSTOMIZATION*/
-.Hard
+.gamemode
 {
   background-color: rgb(255, 68, 68); 
   text-align: center;
@@ -161,7 +161,7 @@ audio
   position: relative;
 }
 
-.Hard:hover 
+.gamemode:hover 
 {
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);

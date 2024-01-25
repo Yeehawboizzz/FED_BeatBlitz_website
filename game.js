@@ -9,14 +9,30 @@ document.addEventListener('DOMContentLoaded', function(){
 
     let correctAnswer = "", correctScore = askedCount = 0, totalQuestion = 10;
 
-// load question from API
-async function loadQuestion(){
-    const APIUrl = 'https://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple';
-    const result = await fetch(`${APIUrl}`)
-    const data = await result.json();
-    _result.innerHTML = "";
-    showQuestion(data.results[0]);
-}
+    const queryParams = new URLSearchParams(window.location.search);
+    const difficulty = queryParams.get('difficulty') || 'medium'; // Default to 'medium' if not provided
+
+    // load question from API
+    async function loadQuestion() {
+        const APIUrl = `https://opentdb.com/api.php?amount=10&category=12&difficulty=${difficulty}&type=multiple`;
+        const result = await fetch(APIUrl);
+        
+        try {
+            const data = await result.json();
+
+            // Check if data.results exists and has at least one item
+            if (data.results && data.results.length > 0) {
+                _result.innerHTML = "";
+                showQuestion(data.results[0]);
+            } else {
+                console.error('No questions found in the API response.');
+                // You might want to handle this case, such as showing an error message or taking appropriate action.
+            }
+        } catch (error) {
+            console.error('Error parsing JSON from the API response.', error);
+            // Handle the error, for example, show an error message or take appropriate action.
+        }
+    }
 
 // event listeners
 function eventListeners(){
@@ -125,23 +141,3 @@ loadQuestion();
     _correctScore.textContent = correctScore;
 });
 
-async function loadQuestion() {
-    const APIUrl = 'https://opentdb.com/api.php?amount=10&category=12&difficulty=medium&type=multiple';
-    const result = await fetch(`${APIUrl}`);
-    
-    try {
-        const data = await result.json();
-
-        // Check if data.results exists and has at least one item
-        if (data.results && data.results.length > 0) {
-            _result.innerHTML = "";
-            showQuestion(data.results[0]);
-        } else {
-            console.error('No questions found in the API response.');
-            // You might want to handle this case, such as showing an error message or taking appropriate action.
-        }
-    } catch (error) {
-        console.error('Error parsing JSON from the API response.', error);
-        // Handle the error, for example, show an error message or take appropriate action.
-    }
-}
