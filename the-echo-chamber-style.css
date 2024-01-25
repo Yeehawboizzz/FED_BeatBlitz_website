@@ -38,9 +38,9 @@ body {
 
 .newsletter-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    height: 30px;
     width: 100%;
     position: relative;
 }
@@ -659,6 +659,9 @@ body {
   }
 
   /*Playlist*/
+  .playlist {
+    margin: 20px;
+  }
   
 }
 
