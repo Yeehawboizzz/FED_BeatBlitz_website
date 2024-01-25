@@ -2,7 +2,9 @@ FED Assignment 2
 Done by: Wang Po Yen Jason and Ong Yee Hen 
 Class: IT02
 
-**Introduction**: 
+Project Name: **The Echo Chamber (ft. BeatBlitz)**: 
+
+**01 Introduction**: 
 Welcome to The Echo Chamber! Step into a digital haven that transcends the ordinary one-stop destination for a symphony of musical experiences. We proudly present a unique online shop that goes beyond just albums and playlists, but to a world where music is not just heard, but felt.
 
 At The Echo Chamber, our shelves are adorned with a curated collection of albums spanning genres and eras. Immerse yourself in the timeless classics, discover hidden gems, and explore the latest masterpieces that redefine musical boundaries. Whether you're a vinyl enthusiast, a CD connoisseur, or a digital maestro, our collection caters to all audiophiles.
@@ -19,20 +21,20 @@ But wait, the thrill doesn't stop there! Each question comes with a countdown ti
 Are you ready to face the challenge and become the ultimate maestro of our musical realm? Play BeatBlitz now!
 
 
-**Design Process**
+**02 Design Process**
 
-1. **X user**: 
+1. **User 1: Customers interested in Albums**: 
 
-2. **Y user**:
+2. **User 2: Customers interested in Playlists**:
 
-3. **Z user**: 
+3. **User 3: People interested in playing BeatBlitz Game**: 
 
 **Link to Figma Wireframes**
 https://www.figma.com/file/XPPq3BGMSMXN7iMKS2qmLv/FED-BeatBlitz?type=design&node-id=0%3A1&mode=design&t=wE7bTi4JLIX5hsVs-1
 
 
-**Features**
-Website Contains X Main Pages:
+**03 Features**
+Website Contains 3 Main Pages (Echo Chamber), 3 Game Pages (BeatBlitz):
 
 **Page 1: Index Page (Home)**
 - Nav Bar (Company Name & Logo, All Albums, Playlist, BeatBlitz)
@@ -84,31 +86,37 @@ Website Contains X Main Pages:
 - In the loading screen, there is a line of Tip for players to refer.
 
 **Page 6: BeatBlitz Game Page**
+- Game page features a background image with MCQ question set that asks questions about music knowledge with 4 options for user to choose. After selecting an option, user will press "Check Answer" to check if it is correct and the next question will load. There are 10 questions per quiz, score /10 is displayed at the top while doing the quiz.
 
+- After quiz ends, there will be a button to return to main menu.
 
-
-**Technologies Used**
+**04 Technologies Used**
 - Languages: HTML, CSS and JavaScript
 - Coding Platform: VS Code
 - Others: Bootstrap, Lottie Animation
 
 
-**Testing**
-**Page 1: Index Page (Home)**
+**05 Testing**
+
+**Page 1,2,3: Sign Up Newsletter** 
+1. Go to Home Page, All Albums or Playlists page.
+2. Try submitting the form without input, there will a required message.
+3. Try typing an invalid email without '@' or '.com' and submit, error message will appear.
+4. Try typing all valid inputs and submit, success message will show.
 
 
 **Page 2: All Albums Shop Page**
+**Shopping Cart**
+1. Go to All Albums Page
+2. Open the shopping cart, try press 'Buy' without adding anything to cart, there will be a **Purchase Failed Message.
+3. Add something in the cart, press 'Buy', there will be a Purchase Success Message. Then, Cart will be cleared.
+4. Add multiple of the same items, see Quantity and Price increase accordingly. 
+5. Try adding something to the cart and refresh the page, notice cart items remains.
 
-
+**Page 1: Index Page (Home)**
 **Page 3: Playlists Page**
-
-
 **Page 4: BeatBlitz Start Page**
-
-
 **Page 5: BeatBlitz Game Page**
-
-
 **Page 6: BeatBlitz Score Page**
 
 
@@ -135,7 +143,7 @@ Website is responsive, when width hits below 767px, mobile view is activated.
 
 
 
-**Credits**
+**06 Credits**
 
 **Content**:
 Embedded Spotify Playlist/Album:
@@ -148,41 +156,24 @@ Soft Jazz: https://open.spotify.com/album/7oFOcwN0RinLbGF2X7mu6n?si=uCRvZj50SLSj
 I took images from these links:
 
 DJ : https://pxhere.com/en/photo/1550901
-
 Album1 : https://www.amazon.sg/After-Hours/dp/B084XT1P28
-
 Album2 : https://medium.com/the-quaker-campus/does-1989-taylors-version-go-too-big-not-fast-enough-df68a15922e0
-
 Album3 : https://pitchfork.com/reviews/albums/coldplay-music-of-the-spheres/
-
 Album4 : https://pitchfork.com/reviews/albums/justin-bieber-justice/
-
 Album5 : https://the-weeknd.fandom.com/wiki/Starboy_(album)
-
 Album6 : https://www.pinterest.com/pin/683702787167546285/
-
 Album7 : https://www.amazon.sg/Divide-Deluxe-Version-Ed-Sheeran/dp/B01MY72DNS
-
 Album8 : https://pitchfork.com/reviews/albums/eminem-kamikaze/
-
 Album9 : https://www.amazon.sg/The-Eminem-Show/dp/B000066JCX 
-
 Album10: https://www.amazon.sg/Four-CD-One-Direction/dp/B09YBXQCTG
-
 Album11: https://musicbrainz.org/release/d0cb6120-ad2e-4694-847f-664083bdc0e4
-
 Album12: https://www.windmill-records.co.uk/elvis-presley---elvis-now-sf-8266-2531-p.asp
 
 Category-Icon: https://www.vecteezy.com/vector-art/26529565-music-note-silhouette-icon-music-symbol-and-rhythm-vector
-
 AboutUs: https://www.pinterest.com/pin/766456430313128874/
-
 Sponsor: https://en.m.wikipedia.org/wiki/File:Spotify_icon.svg
-
 Beatblitz Background: https://rarible.com/rhythmandstealth/owned
-
 Beatblitz Audio: https://www.youtube.com/watch?v=UtXWe5oa3U8&ab_channel=WeAreMagonia
-
 Beatblitz Game Background: https://pngtree.com/freebackground/game-red-outer-space_2444899.html
 
 The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music-shop2c-the-echo-chamber/1-65abf34d487248d694a0c2a34adb19bd?id=tnnGeKV6BK%2bKmdPKFwkxeQ%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0
