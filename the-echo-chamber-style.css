@@ -512,6 +512,11 @@ body {
   margin-top: 60px;
 }
 
+#playlist {
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 
@@ -541,9 +546,15 @@ body {
     margin-bottom: 0;
     text-align: center;
   }
+
+  /*Playlist*/
+  #yeehaw {
+    margin: 30px;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  /*Shopping Cart*/
   #shopping-cart-container {
     margin-top: 60px;
   }
@@ -641,5 +652,8 @@ body {
     margin-left: 50px;
     margin-top: 130px;
   }
+
+  /*Playlist*/
+  
 }
 
