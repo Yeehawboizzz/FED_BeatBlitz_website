@@ -146,48 +146,12 @@ audio
   margin-top: 500px;
 }
 
-/*CHARACTER CUSTOMIZATION*/
-.gamemode
-{
-  background-color: rgb(255, 68, 68); 
-  text-align: center;
-  height: 100px;
-  width: 100px;
-  padding: 30px;
-  margin: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 10px;
-  position: relative;
-}
-
-.gamemode:hover 
-{
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-}
-
-.Diff 
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 50px;
-  width: 100vw;
-  height: 30vw;
-}
-
-.Diff > p 
-{
-  background-color: gray;
-  margin: 25px;
-  padding: 30px;
-  font-size: 15px;
-}
-
-.selected {
-  background-color: #b22dff; /* Darkened color for selected button */
-  color: #fff;
+/*DIFFICULTY*/
+#easyCategory.selected,
+#mediumCategory.selected,
+#hardCategory.selected {
+    background-color: #7b0000; /* Change to the color you want */
+    color: #000; /* Change to the color you want */
 }
 
 .title {
@@ -195,53 +159,6 @@ audio
   font-family: "Coda", sans-serif;
   text-align: center;
 }
-.profile {
-  margin: auto;
-	width: 27em; 
-  height: 15em;
-  background: #fff;
-  border-radius: .3em;
-}
-
-.profile  #fullname {
-  margin: auto;
-  margin-top: -4.40em;
-  margin-left: 5.80em;
-  color: #dc8fff;
-  font-size: 1.53em;
-  font-family: "Coda", sans-serif;
-  font-weight: bold;
-}
-
-#username {
-  margin: auto;
-  display: inline-block;
-  margin-left: 10.43em;
-  color: #7a588a;
-  font-size: .87em;
-  font-family: "varela round", sans-serif;
-}
-
-.profile > .description {
-  margin: auto;
-  margin-top: 1.35em;
-  margin-bottom: 3em;
-  margin-right: 3em;
-  width: 18em;
-  color: #4a5cb8;
-  font-size: .87em;
-  font-family: "varela round", sans-serif;
-}
-
-.profile > img#avatar {
-	padding: .7em;
-  margin-left: .3em;
-  margin-top: .3em;
-  height: 6.23em;
-  width: 6.23em;
-  border-radius: 18em;
-}
-
 
 .playbutton {
 	margin: 0%;
@@ -268,13 +185,6 @@ button {
   background: #bc1a6e;
 }
 
-.left,
-.right
-{
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-}
 
 @media (max-width: 768px) {
   .menu {
