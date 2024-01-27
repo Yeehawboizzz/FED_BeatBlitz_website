@@ -14,20 +14,24 @@ But that's not all, we dive into the world of curated playlists, meticulously cr
 For those who crave a challenge, we introduce BeatBlitz, a mini-game that puts your music knowledge to the test.
 It offers an exhilarating experience where you can guess the elusive singer behind the tunes.
 
-Immerse yourself in the excitement with our specially crafted game mode tailored to suit your musical expertise. Whether you're a casual listener or a seasoned music aficionado, our multiple-choice challenge awaits you. Opt for a round of fun as you test your knowledge of popular songs and artists in our engaging and entertaining game. 
-
-But wait, the thrill doesn't stop there! Each question comes with a countdown timer, adding an extra layer of intensity to the gameplay. When the game ends, bask in the glory of your achievements with a detailed scoreboard that highlights your points as well as an Achievement Title.
+Immerse yourself in the excitement with our specially crafted game mode tailored to suit your musical expertise. Whether you're a casual listener or a seasoned music aficionado, our multiple-choice challenge awaits you. Opt for a round of fun as you test your knowledge of popular songs and artists in our engaging and entertaining game. With three difficulty levels—Beginner, Intermediate, and Expert—players can choose the challenge that best matches their skills. When the game ends, bask in the glory of your achievements with a detailed scoreboard that highlights your points as well as an Achievement Title.
 
 Are you ready to face the challenge and become the ultimate maestro of our musical realm? Play BeatBlitz now!
 
 
 **02 Design Process**
 
-1. **User 1: Customers interested in Albums**: 
+User 1: Customers interested in Albums:
 
-2. **User 2: Customers interested in Playlists**:
+For User 1, our website provides a vast collection of albums spanning various genres, eras and artists. Upon entering the site, they can easily look up the NEW ARRIVALS that are featured in the main page, then navigate to the ALL ALBUMS Page where all the albums we sell will be featured. Our albums are categorised and users can use the filter panel to quickly locate the genre they are interested in. Then, the user can purchase the albums by simply pressing Add to Cart, which will then be displayed in the Shopping Cart for users to save it temporarily or buy it.
 
-3. **User 3: People interested in playing BeatBlitz Game**: 
+User 2: Customers interested in Playlists:
+
+User 2, who loves curated playlists, will find our website to be a musical haven. They can explore a diverse range of playlists catering to different moods, occasions, and genres. User 2 can simply navigate to the Playlists Tab from the Nav Bar. To enhance their experience, after choosing a playlist, each playlist can be previewed from our embeded Spotify iFrame, which shows all the songs inside the playlist together with their details. Each sound can be directly played from the website itself through the Spotify iFrame. If users prefer to listen in the actual Spotify App, simply press on the Playlist Title or "Save to Spotify" to be auto directed.
+
+User 3: People interested in playing BeatBlitz Game:
+
+For User 3, the music game enthusiast, our website offers the exciting BeatBlitz Game. This interactive and engaging game challenges users to test their music knowledge. User can navigate to BeatBlitz through pressing on BeatBlitz on the Nav Bar from TEC Website. After which, user can select the difficulty that best match their music knowledge level and carry on with the MCQ game. A score will be reflected to tell the user how he faired.
 
 **Link to Figma Wireframes**
 https://www.figma.com/file/XPPq3BGMSMXN7iMKS2qmLv/FED-BeatBlitz?type=design&node-id=0%3A1&mode=design&t=wE7bTi4JLIX5hsVs-1
@@ -75,15 +79,20 @@ Website Contains 3 Main Pages (Echo Chamber), 3 Game Pages (BeatBlitz):
 - Sign up box prompting user for Email for NewsLetter  (Includes Validation)
 - Footer (Contact Us: Email & Tel, Community: FB/IG, Sponsored By: Spotify, Company Logo, Shop Address)
 
-**Page 4: BeatBlitz Home Page**
+
+**Page 4: BeatBlitz Loading Screen Page**
+- After pressing BeatBlitz from the Nav Bar, a black loading page with Lottie Animation of a spinning cube for 5 seconds before going into the actual game page.
+
+**Page 5: BeatBlitz Home Page**
 - Futuristic Background Image with BeatBlitz Title
 - Start Game and Back to TEC Options
 - Rhyhtem Button when pressed, plays soundtrack.
 
-**Page 5: BeatBlitz Loading Screen Page**
-- After pressing Start Game, a black loading page with Lottie Animation of a spinning cube for 5 seconds before going into the actual game page.
-
-- In the loading screen, there is a line of Tip for players to refer.
+**Page 5: BeatBlitz Game Difficulty Selection Page**
+- Futuristic Background Image with BeatBlitz Title
+- Rhyhtem Button when pressed, plays soundtrack.
+- 3 Difficulty Modes: Beginner, Intermediate, Expert
+- After selecting a difficulty, it will be highlighted and user can press PLAY to start the game.
 
 **Page 6: BeatBlitz Game Page**
 - Game page features a background image with MCQ question set that asks questions about music knowledge with 4 options for user to choose. After selecting an option, user will press "Check Answer" to check if it is correct and the next question will load. There are 10 questions per quiz, score /10 is displayed at the top while doing the quiz.
@@ -180,12 +189,11 @@ The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music
 
 
 **Libraries Used**
-
+-
 
 
 **External Sources**
-
-
+-
 
 **API Used**
 Open Trivia Database API
