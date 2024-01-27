@@ -117,12 +117,14 @@ body {
   }
   
   .sponsored img {
+    width: 180px;
+    height: 180px;
     margin-right: 8px;
   }
   
   .footer-logo img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     display: block;
     margin: auto;
     margin-bottom: 35px;
@@ -138,7 +140,7 @@ body {
   }
   
   .copyright p {
-    margin: 5px 0;
+    margin: 2px 0;
   }
   
   .address{
