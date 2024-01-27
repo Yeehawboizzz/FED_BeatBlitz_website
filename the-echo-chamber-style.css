@@ -121,8 +121,8 @@ body {
   }
   
   .footer-logo img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     display: block;
     margin: auto;
     margin-bottom: 35px;
@@ -130,7 +130,7 @@ body {
   
   .copyright {
     position: absolute;
-    bottom: 10px;
+    bottom: 2px;
     right: 10px;
     text-align: right;
     padding: 10px;
@@ -244,6 +244,7 @@ body {
     text-align: center;
     border-radius: 5px;
     z-index: 11;
+    cursor: pointer;
   }
   
   #cart-popup {
@@ -291,15 +292,15 @@ body {
   
   #checkout-button {
     background-color: #fff;
-    color: #f88f44;
-    border: 1px solid #f17115;
+    color: #000000;
+    border: 1px solid #000000;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 3px;
   }
   
   #checkout-button:hover {
-    background-color: #f88f44;
+    background-color: #000000;
     color: #fff;
   }
   
@@ -308,17 +309,17 @@ body {
     top: 5px;
     right: 10px;
     font-size: 14px;
-    color: #f88f44;
+    color: #000000;
     cursor: pointer;
     background-color: #fff;
-    border: 1px solid #f17115;
+    border: 1px solid #000000;
     padding: 5px 10px;
   }
   
   .clear-cart {
     background-color: #fff;
-    color: #f88f44;
-    border: 1px solid #f17115;
+    color: #000000;
+    border: 1px solid #000000;
     padding: 5px 10px;
     cursor: pointer;
     margin-right: 150px;
@@ -326,7 +327,7 @@ body {
   }
   
   .clear-cart:hover {
-    background-color: #f88f44;
+    background-color: #000000;
     color: #fff;
   }
   
