@@ -12,27 +12,51 @@ document.addEventListener('DOMContentLoaded', function(){
     const queryParams = new URLSearchParams(window.location.search);
     const difficulty = queryParams.get('difficulty') || 'medium'; // Default to 'medium' if not provided
 
+    
     // load question from API
-    async function loadQuestion() {
-        const APIUrl = `https://opentdb.com/api.php?amount=1&category=12&difficulty=${difficulty}&type=multiple`;
+    let questions = []; // Array to store the questions
+    let currentQuestionIndex = 0; // Index to track the current question
+    
+    // Function to fetch data from API
+    async function fetchData() {
+        const APIUrl = `https://opentdb.com/api.php?amount=10&category=12&difficulty=${difficulty}&type=multiple`;
         const result = await fetch(APIUrl);
-
+        const data = await result.json();
+        return data.results;
+    }
+    
+    // Function to process data
+    function processData(question) {
+        _result.innerHTML = "";
+        showQuestion(question);
+    }
+    
+    // Function to load question
+    async function loadQuestion() {
         try {
-            const data = await result.json();
-            console.log(data)
-            // Check if data.results exists and has at least one item
-            if (data.results && data.results.length > 0) {
-                _result.innerHTML = "";
-                showQuestion(data.results[0]);
+            // If questions array is empty, fetch data from API
+            if (questions.length === 0) {
+                questions = await fetchData();
+                console.log(questions);
+            }
+            // If there are questions in the array, process the next question
+            if (questions.length > 0) {
+                processData(questions[currentQuestionIndex]);
+                currentQuestionIndex++;
+                // If all questions have been processed, clear the questions array
+                if (currentQuestionIndex >= questions.length) {
+                    questions = [];
+                    currentQuestionIndex = 0;
+                }
             } else {
                 console.error('No questions found in the API response.');
-                // You might want to handle this case, such as showing an error message or taking appropriate action.
             }
         } catch (error) {
             console.error('Error parsing JSON from the API response.', error);
-            // Handle the error, for example, show an error message or take appropriate action.
         }
     }
+    
+
 
 // event listeners
 function eventListeners(){
@@ -121,7 +145,7 @@ function checkCount(){
     } else {
         setTimeout(function(){
             loadQuestion();
-        }, 300);
+        }, 3000);
     }
 }
 

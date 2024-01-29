@@ -140,6 +140,7 @@ body{
 }
 
 #back-home{
+    margin-top: 0;
     display: none;
 }
 
