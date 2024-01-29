@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // load question from API
     async function loadQuestion() {
-        const APIUrl = `https://opentdb.com/api.php?amount=10&category=12&difficulty=${difficulty}&type=multiple`;
+        const APIUrl = `https://opentdb.com/api.php?amount=1&category=12&difficulty=${difficulty}&type=multiple`;
         const result = await fetch(APIUrl);
-        
+
         try {
             const data = await result.json();
-
+            console.log(data)
             // Check if data.results exists and has at least one item
             if (data.results && data.results.length > 0) {
                 _result.innerHTML = "";
