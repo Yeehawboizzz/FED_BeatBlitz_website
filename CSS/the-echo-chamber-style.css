@@ -369,7 +369,7 @@ body {
   }
 
   .category-icon {
-    background-image: url(Images/category-icon.jpg);
+    background-image: url(../Images/category-icon.jpg);
     width: 25px;
     height: 25px;
   }

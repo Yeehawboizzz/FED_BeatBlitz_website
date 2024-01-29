@@ -25,7 +25,7 @@ body{
     letter-spacing: 2px;
     color: var(--dark-color);
     background: var(--grey-color);
-    background-image: url(Images/game-background.jpg);
+    background-image: url(../Images/game-background.jpg);
     background-size: cover;
     font-family: 'Inconsolata', monospace;
 }

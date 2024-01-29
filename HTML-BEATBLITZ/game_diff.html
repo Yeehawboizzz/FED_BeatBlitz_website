@@ -6,18 +6,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BEATBLITZ</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link href="beatblitz_style.css" rel="stylesheet" type="text/css">
+<link href="../CSS/beatblitz_style.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<script src="../JS/difficulty.js"></script>
 <div class="screen">
-    <img src="Images/Background.jpg" width="100%">
+    <img src="../Images/Background.jpg" width="100%">
 
     <audio id="bgm" controls autoplay loop>
-        <source src="bgm.mp3" type="audio/mp3">
+        <source src="../bgm.mp3" type="audio/mp3">
     </audio>
 
     <script>
@@ -36,8 +37,11 @@
     <h1>BEATBLITZ</h1>
     <h3>The World of<div id="playPauseButton" class="glow" onclick="togglePlayPause()">Rhythm</div></h3>
     <ul>
-        <li><a href="game_diff.html">Start Game</a></li>
-        <li><a href="index.html">Back to TEC Records</a></li>
+        <li><button id="easyCategory">BEGINNER</button></li>
+        <li><button id="mediumCategory">INTERMEDIATE</button></li>
+        <li><button id="hardCategory">EXPERT</button></li>
+        <li><h1><a id="playLink" href="#">PLAY</a></h1></li>
+        <li><a href="game_home.html">Back</a></li>
     </ul>
     </div>
 </div>
