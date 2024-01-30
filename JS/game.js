@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const _checkBtn = document.getElementById('check-answer');
     const _backHomeBtn = document.getElementById('back-home');
     const _result = document.getElementById('result');
+    const _resultAnimation = document.getElementById('result-animation-container');
     const _correctScore = document.getElementById('correct-score');
     const _totalQuestion = document.getElementById('total-question');
 
@@ -138,8 +139,13 @@ function checkCount(){
             console.log("");
         }, 5000);
 
-
         _result.innerHTML += `<p>Your score is ${correctScore}.</p>`;
+        if (correctScore > 7){
+            _resultAnimation.style.display = "block";
+            setTimeout(function(){
+                _resultAnimation.style.display = "none";
+            }, 10000);
+        }
         _backHomeBtn.style.display = "block";
         _checkBtn.style.display = "none";
     } else {
