@@ -383,15 +383,7 @@ body {
     flex-wrap: wrap;
   }
   
-  .bowling-ball-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .ball-display-box {
+  .album-display-box {
     text-align: center;
     padding: 10px;
     border: 1px solid #a2a2a2;
@@ -401,8 +393,7 @@ body {
     margin: 5px;
   }
   
-  /*Ensure that the hover animation don't cover my ball info*/
-  .ball-display-box::before {
+  .album-display-box::before {
     content: "";
     position: absolute;
     top: 0;
@@ -414,41 +405,21 @@ body {
     transition: transform 0.3s ease-in-out;
   }
   
-  .ball-display-box:hover::before {
+  .album-display-box:hover::before {
     transform: scale(1.05);
   }
   
-  .ball-display-box li{
+  .album-display-box li{
     font-size: 19px;
     text-align: left;
     padding-left: 55px;
   }
   
-  .ball-display-box img{
+  .album-display-box img{
     margin-bottom: 10px;
   }
-  
-  .ball-info li{
-    text-align: left;
-    padding-right: 30px;
-    white-space: nowrap;
-  }
-  
-  /*Hidden Additional Ball Info Box*/
-  .ball-info {
-    
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
 
-.ball-display-box {
+.album-display-box {
   text-align: center;
   padding: 10px;
   border: 1px solid #a2a2a2;
@@ -458,15 +429,15 @@ body {
   margin: 5px;
 }
 
-.ball-display-box .content {
+.album-display-box .content {
   position: relative;
   width: 200px;
   height: 200px;
   margin: 0 auto;
 }
 
-.ball-display-box .front,
-.ball-display-box .back {
+.album-display-box .front,
+.album-display-box .back {
   position: absolute;
   top: 0;
   left: 0;
@@ -476,37 +447,31 @@ body {
   transition: transform 0.3s linear;
 }
 
-.ball-display-box .front {
+.album-display-box .front {
   z-index: 2;
   transform: rotateY(0deg);
 }
 
-.ball-display-box .back {
+.album-display-box .back {
   transform: rotateY(180deg);
 }
 
-.ball-display-box:hover .front {
+.album-display-box:hover .front {
   transform: rotateY(-180deg);
 }
 
-.ball-display-box:hover .back {
+.album-display-box:hover .back {
   transform: rotateY(0deg);
 }
 
-.ball-display-box li{
+.album-display-box li{
   font-size: 15px;
   text-align: left;
   padding-left: 10px;
 }
 
-.ball-display-box img{
+.album-display-box img{
   margin-bottom: 10px;
-}
-
-.ball-info li{
-  text-align: left;
-  padding-right: 30px;
-  white-space: nowrap;
 }
 
 /*PLAYLIST*/
@@ -519,8 +484,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-
 
 
 /*RESPONSIVE*/

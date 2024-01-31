@@ -187,7 +187,12 @@ button {
 
 
 @media (max-width: 768px) {
+  img {
+    filter: brightness(70%);
+  }
+
   .menu {
+    align-self: center;
     margin-left: 2em;
   }
 
@@ -205,7 +210,6 @@ button {
     text-align: center;
     font-size: larger;
     text-decoration: none;
-    color: #fff;
     font-weight: 700;
   }
 
