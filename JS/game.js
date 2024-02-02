@@ -83,7 +83,7 @@ function showQuestion(data){
     // console.log(correctAnswer);
 
     
-    _question.innerHTML = `${data.question} <br> <span class = "category"> ${data.category} </span>`;
+    _question.innerHTML = `${data.question}`;
     _options.innerHTML = `
         ${optionsList.map((option, index) => `
             <li> ${index + 1}. <span>${option}</span> </li>
@@ -139,7 +139,7 @@ function checkCount(){
             console.log("");
         }, 5000);
 
-        _result.innerHTML += `<p>Your score is ${correctScore}.</p>`;
+        _result.innerHTML += `<p>Not bad. Your score is ${correctScore}.</p>`;
         if (correctScore > 7){
             _resultAnimation.style.display = "block";
             setTimeout(function(){
