@@ -14,7 +14,7 @@ But that's not all, we dive into the world of curated playlists, meticulously cr
 For those who crave a challenge, we introduce BeatBlitz, a mini-game that puts your music knowledge to the test.
 It offers an exhilarating experience where you can guess the elusive singer behind the tunes.
 
-Immerse yourself in the excitement with our specially crafted game mode tailored to suit your musical expertise. Whether you're a casual listener or a seasoned music aficionado, our multiple-choice challenge awaits you. Opt for a round of fun as you test your knowledge of popular songs and artists in our engaging and entertaining game. With three difficulty levels—Beginner, Intermediate, and Expert—players can choose the challenge that best matches their skills. When the game ends, bask in the glory of your achievements with a detailed scoreboard that highlights your points as well as an Achievement Title.
+Immerse yourself in the excitement with our specially crafted game mode tailored to suit your musical expertise. Whether you're a casual listener or a seasoned music aficionado, our multiple-choice challenge awaits you. Opt for a round of fun as you test your knowledge of popular songs and artists in our engaging and entertaining game. With three difficulty levels—Beginner, Intermediate, and Expert—players can choose the challenge that best matches their skills. When the game ends, bask in the glory of your achievements with a trophy animation that highlights your points.
 
 Are you ready to face the challenge and become the ultimate maestro of our musical realm? Play BeatBlitz now!
 
@@ -38,7 +38,7 @@ https://www.figma.com/file/XPPq3BGMSMXN7iMKS2qmLv/FED-BeatBlitz?type=design&node
 
 
 **03 Features**
-Website Contains 3 Main Pages (Echo Chamber), 3 Game Pages (BeatBlitz):
+Website Contains 3 Main Pages (Echo Chamber), 4 Game Pages (BeatBlitz):
 
 **Page 1: Index Page (Home)**
 - Nav Bar (Company Name & Logo, All Albums, Playlist, BeatBlitz)
@@ -50,7 +50,6 @@ Website Contains 3 Main Pages (Echo Chamber), 3 Game Pages (BeatBlitz):
 
 **Page 2: All Albums Shop Page**
 - Nav Bar (Company Name & Logo, All Albums, Playlist, BeatBlitz)
-
 - Trending Albums features the best selling albums, display box is bigger (3 per row) and on top.
 - All Albums features all albums sold in the shop, display box is smaller and more concised (4 per row) below the trending albums.
 
@@ -98,6 +97,7 @@ Website Contains 3 Main Pages (Echo Chamber), 3 Game Pages (BeatBlitz):
 - Game page features a background image with MCQ question set that asks questions about music knowledge with 4 options for user to choose. After selecting an option, user will press "Check Answer" to check if it is correct and the next question will load. There are 10 questions per quiz, score /10 is displayed at the top while doing the quiz.
 
 - After quiz ends, there will be a button to return to main menu.
+- If player scored 7 or more out of 10, a special lottie animation will play to reward the user.
 
 **04 Technologies Used**
 - Languages: HTML, CSS and JavaScript
@@ -106,86 +106,100 @@ Website Contains 3 Main Pages (Echo Chamber), 3 Game Pages (BeatBlitz):
 
 
 **05 Testing**
+**Page 1: Index Page (Home)**
+1. Go to Homepage.
+2. Try scrolling and see the content
+3. Try using the navigation bar at the top to redirect to other pages
+3. Try pressing "Shop Now" at the middle of the page to redirect to All Albums page.
+4. Try pressing "Shop Now" under the albums to redirect to All Albums page.
 
 **Page 1,2,3: Sign Up Newsletter** 
-1. Go to Home Page, All Albums or Playlists page.
+1. Go to Homepage, All Albums or Playlists page.
 2. Try submitting the form without input, there will a required message.
 3. Try typing an invalid email without '@' or '.com' and submit, error message will appear.
 4. Try typing all valid inputs and submit, success message will show.
 
-
 **Page 2: All Albums Shop Page**
 **Shopping Cart**
-1. Go to All Albums Page
-2. Open the shopping cart, try press 'Buy' without adding anything to cart, there will be a **Purchase Failed Message.
+1. Go to All Albums page.
+2. Open the shopping cart, try press 'Buy' without adding anything to cart, there will be a Purchase Failed Message.
 3. Add something in the cart, press 'Buy', there will be a Purchase Success Message. Then, Cart will be cleared.
 4. Add multiple of the same items, see Quantity and Price increase accordingly. 
 5. Try adding something to the cart and refresh the page, notice cart items remains.
 
-**Page 1: Index Page (Home)**
 **Page 3: Playlists Page**
+1. Go to Playlist page.
+2. Press on any playlist on the "listen now", the website will redirect to the respective playlist.
+3. On the playlist page, try playing any songs on the playlist.
+4. Try adding the playlist to Spotify.
+
 **Page 4: BeatBlitz Start Page**
+1. Go to BeatBlitz page, a loading screen will appear before going into the main menu.
+2. In the main menu page, try pressing "Back to TEC Records", it will redirect the website to The Echo Chamber.
+3. Try pressing "Leaderboard", it will redirect the website to the leaderboard page, and display the top 10 player that cleared Expert Mode, press "Back to Main Menu" to go back.
+4. Try pressing "Start Game" and the website will redirect to the game difficulty page.
+
 **Page 5: BeatBlitz Game Page**
-**Page 6: BeatBlitz Score Page**
+1. On the Game Difficulty page, choose a difficulty and press Play.
+2. There will be a total of 10 questions generated from the API, as well as four options, with one of them as the correct answer.
+3. Try playing the quiz until the 10th question is finished.
+4. If score is less than 7, it will display the score, if more than or equals to 7, a lottie animation of a trophy will play.
 
 
 **Responsiveness (Mobile View)**
 Website is responsive, when width hits below 767px, mobile view is activated.
 
 **Page 1: Index Page (Home)**
-
+The elements on the navigation bar will all be hidden under the three-lined button, the albums on New Arrival will change from row to grid to column based on the responsive frame. The About Us information will change from left right arrangement to up down arrangement. The information on the footer will change from row to column.
 
 **Page 2: All Albums Shop Page**
-
+The elements on the navigation bar will all be hidden under the three-lined button, the navigation bar that redirects to different album category will also have its element hidden under an icon button. The albums will change from row to grid to column based on the responsive frame. The information on the footer will change from row to column.
 
 **Page 3: Playlists Page**
-
+The main featured playlist information will change from left right arrangement to up down arrangement. The playlists will change from row to grid to column based on the responsive frame. The information on the footer will change from row to column.
 
 **Page 4: BeatBlitz Start Page**
-
+The main menu will shift to the center of the screen and the background will be centralised.
 
 **Page 5: BeatBlitz Game Page**
+The quiz format will remain similar, the background will be shorter in width.
 
-
-**Page 6: BeatBlitz Score Page**
-
-
+**Page 6: BeatBlitz Leaderboard**
+The leaderboard will remain similar, the background will be shorter in width.
 
 
 **06 Credits**
 
 **Content**:
 Embedded Spotify Playlist/Album:
-Top Hits 2023: https://open.spotify.com/album/5j0o3XQ1YciVzm7MtcFmfG?si=_4wl0JScSkuHa8P12o18MQ
-Mozart Classic: https://open.spotify.com/playlist/72oczUf02H4RGoaUBC87JQ?si=1ff2be680bce4f89
-60s 70s 80s 90s Classical Hits: https://open.spotify.com/album/4bj82rYTQLhl8xrWRySRdo?si=hYvzkFHkT26RRIq_4XitKg
-Soft Jazz: https://open.spotify.com/album/7oFOcwN0RinLbGF2X7mu6n?si=uCRvZj50SLSjFTGCzq8gsA
+- Top Hits 2023: https://open.spotify.com/album/5j0o3XQ1YciVzm7MtcFmfG?si=_4wl0JScSkuHa8P12o18MQ
+- Mozart Classic: https://open.spotify.com/playlist/72oczUf02H4RGoaUBC87JQ?si=1ff2be680bce4f89
+- 60s 70s 80s 90s Classical Hits: https://open.spotify.com/album/4bj82rYTQLhl8xrWRySRdo?si=hYvzkFHkT26RRIq_4XitKg
+- Soft Jazz: https://open.spotify.com/album/7oFOcwN0RinLbGF2X7mu6n?si=uCRvZj50SLSjFTGCzq8gsA
 
 **Media**:
 I took images from these links:
 
-DJ : https://pxhere.com/en/photo/1550901
-Album1 : https://www.amazon.sg/After-Hours/dp/B084XT1P28
-Album2 : https://medium.com/the-quaker-campus/does-1989-taylors-version-go-too-big-not-fast-enough-df68a15922e0
-Album3 : https://pitchfork.com/reviews/albums/coldplay-music-of-the-spheres/
-Album4 : https://pitchfork.com/reviews/albums/justin-bieber-justice/
-Album5 : https://the-weeknd.fandom.com/wiki/Starboy_(album)
-Album6 : https://www.pinterest.com/pin/683702787167546285/
-Album7 : https://www.amazon.sg/Divide-Deluxe-Version-Ed-Sheeran/dp/B01MY72DNS
-Album8 : https://pitchfork.com/reviews/albums/eminem-kamikaze/
-Album9 : https://www.amazon.sg/The-Eminem-Show/dp/B000066JCX 
-Album10: https://www.amazon.sg/Four-CD-One-Direction/dp/B09YBXQCTG
-Album11: https://musicbrainz.org/release/d0cb6120-ad2e-4694-847f-664083bdc0e4
-Album12: https://www.windmill-records.co.uk/elvis-presley---elvis-now-sf-8266-2531-p.asp
-
-Category-Icon: https://www.vecteezy.com/vector-art/26529565-music-note-silhouette-icon-music-symbol-and-rhythm-vector
-AboutUs: https://www.pinterest.com/pin/766456430313128874/
-Sponsor: https://en.m.wikipedia.org/wiki/File:Spotify_icon.svg
-Beatblitz Background: https://rarible.com/rhythmandstealth/owned
-Beatblitz Audio: https://www.youtube.com/watch?v=UtXWe5oa3U8&ab_channel=WeAreMagonia
-Beatblitz Game Background: https://pngtree.com/freebackground/game-red-outer-space_2444899.html
-
-The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music-shop2c-the-echo-chamber/1-65abf34d487248d694a0c2a34adb19bd?id=tnnGeKV6BK%2bKmdPKFwkxeQ%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0
+- DJ : https://pxhere.com/en/photo/1550901 
+- Album1 : https://www.amazon.sg/After-Hours/dp/B084XT1P28 
+- Album2 : https://medium.com/the-quaker-campus/does-1989-taylors-version-go-too-big-not-fast-enough-df68a15922e0 
+- Album3 : https://pitchfork.com/reviews/albums/coldplay-music-of-the-spheres/ 
+- Album4 : https://pitchfork.com/reviews/albums/justin-bieber-justice/ 
+- Album5 : https://the-weeknd.fandom.com/wiki/Starboy_(album) 
+- Album6 : https://www.pinterest.com/pin/683702787167546285/ 
+- Album7 : https://www.amazon.sg/Divide-Deluxe-Version-Ed-Sheeran/dp/B01MY72DNS
+- Album8 : https://pitchfork.com/reviews/albums/eminem-kamikaze/ 
+- Album9 : https://www.amazon.sg/The-Eminem-Show/dp/B000066JCX
+- Album10: https://www.amazon.sg/Four-CD-One-Direction/dp/B09YBXQCTG
+- Album11: https://musicbrainz.org/release/d0cb6120-ad2e-4694-847f-664083bdc0e4
+- Album12: https://www.windmill-records.co.uk/elvis-presley---elvis-now-sf-8266-2531-p.asp
+- Category-Icon: https://www.vecteezy.com/vector-art/26529565-music-note-silhouette-icon-music-symbol-and-rhythm-vector
+- AboutUs: https://www.pinterest.com/pin/766456430313128874/
+- Sponsor: https://en.m.wikipedia.org/wiki/File:Spotify_icon.svg
+- Beatblitz Background: https://rarible.com/rhythmandstealth/owned
+- Beatblitz Audio: https://www.youtube.com/watch?v=UtXWe5oa3U8&ab_channel=WeAreMagonia
+- Beatblitz Game Background: https://pngtree.com/freebackground/game-red-outer-space_2444899.html
+- The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music-shop2c-the-echo-chamber/1-65abf34d487248d694a0c2a34adb19bd?id=tnnGeKV6BK%2bKmdPKFwkxeQ%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0
 
 
 **Libraries Used**
@@ -196,8 +210,8 @@ The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music
 -
 
 **API Used**
-Open Trivia Database API
-
+- Open Trivia Database API
+- RandomUser API
 
 **Acknowledgements**:
 -I received inspiration from: 
