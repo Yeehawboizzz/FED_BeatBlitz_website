@@ -4,7 +4,7 @@ Class: IT02
 
 Project Name: **The Echo Chamber (ft. BeatBlitz)**: 
 
-**01 Introduction**: 
+# 01 Introduction
 Welcome to The Echo Chamber! Step into a digital haven that transcends the ordinary one-stop destination for a symphony of musical experiences. We proudly present a unique online shop that goes beyond just albums and playlists, but to a world where music is not just heard, but felt.
 
 At The Echo Chamber, our shelves are adorned with a curated collection of albums spanning genres and eras. Immerse yourself in the timeless classics, discover hidden gems, and explore the latest masterpieces that redefine musical boundaries. Whether you're a vinyl enthusiast, a CD connoisseur, or a digital maestro, our collection caters to all audiophiles.
@@ -19,7 +19,7 @@ Immerse yourself in the excitement with our specially crafted game mode tailored
 Are you ready to face the challenge and become the ultimate maestro of our musical realm? Play BeatBlitz now!
 
 
-**02 Design Process**
+# 02 Design Process
 
 User 1: Customers interested in Albums:
 
@@ -37,7 +37,7 @@ For User 3, the music game enthusiast, our website offers the exciting BeatBlitz
 https://www.figma.com/file/XPPq3BGMSMXN7iMKS2qmLv/FED-BeatBlitz?type=design&node-id=0%3A1&mode=design&t=wE7bTi4JLIX5hsVs-1
 
 
-**03 Features**
+# 03 Features
 Website Contains 3 Main Pages (Echo Chamber), 4 Game Pages (BeatBlitz):
 
 **Page 1: Index Page (Home)**
@@ -78,18 +78,17 @@ Website Contains 3 Main Pages (Echo Chamber), 4 Game Pages (BeatBlitz):
 - Sign up box prompting user for Email for NewsLetter  (Includes Validation)
 - Footer (Contact Us: Email & Tel, Community: FB/IG, Sponsored By: Spotify, Company Logo, Shop Address)
 
-
 **Page 4: BeatBlitz Loading Screen Page**
 - After pressing BeatBlitz from the Nav Bar, a black loading page with Lottie Animation of a spinning cube for 5 seconds before going into the actual game page.
 
 **Page 5: BeatBlitz Home Page**
 - Futuristic Background Image with BeatBlitz Title
 - Start Game and Back to TEC Options
-- Rhyhtem Button when pressed, plays soundtrack.
+- Easter Egg - Rhythm Button when pressed, plays soundtrack.
 
 **Page 5: BeatBlitz Game Difficulty Selection Page**
 - Futuristic Background Image with BeatBlitz Title
-- Rhyhtem Button when pressed, plays soundtrack.
+- Rhythm Button when pressed, plays soundtrack.
 - 3 Difficulty Modes: Beginner, Intermediate, Expert
 - After selecting a difficulty, it will be highlighted and user can press PLAY to start the game.
 
@@ -99,13 +98,14 @@ Website Contains 3 Main Pages (Echo Chamber), 4 Game Pages (BeatBlitz):
 - After quiz ends, there will be a button to return to main menu.
 - If player scored 7 or more out of 10, a special lottie animation will play to reward the user.
 
-**04 Technologies Used**
+
+# 04 Technologies Used
 - Languages: HTML, CSS and JavaScript
 - Coding Platform: VS Code
 - Others: Bootstrap, Lottie Animation
 
 
-**05 Testing**
+# 05 Testing
 **Page 1: Index Page (Home)**
 1. Go to Homepage.
 2. Try scrolling and see the content
@@ -136,15 +136,15 @@ Website Contains 3 Main Pages (Echo Chamber), 4 Game Pages (BeatBlitz):
 **Page 4: BeatBlitz Start Page**
 1. Go to BeatBlitz page, a loading screen will appear before going into the main menu.
 2. In the main menu page, try pressing "Back to TEC Records", it will redirect the website to The Echo Chamber.
-3. Try pressing "Leaderboard", it will redirect the website to the leaderboard page, and display the top 10 player that cleared Expert Mode, press "Back to Main Menu" to go back.
-4. Try pressing "Start Game" and the website will redirect to the game difficulty page.
+3. Try pressing on the red coloured word "RHYTHM" to pause and play audio.
+4. Try pressing "Leaderboard", it will redirect the website to the leaderboard page, and display the top 10 player that cleared Expert Mode, press "Back to Main Menu" to go back.
+5. Try pressing "Start Game" and the website will redirect to the game difficulty page.
 
 **Page 5: BeatBlitz Game Page**
 1. On the Game Difficulty page, choose a difficulty and press Play.
 2. There will be a total of 10 questions generated from the API, as well as four options, with one of them as the correct answer.
 3. Try playing the quiz until the 10th question is finished.
 4. If score is less than 7, it will display the score, if more than or equals to 7, a lottie animation of a trophy will play.
-
 
 **Responsiveness (Mobile View)**
 Website is responsive, when width hits below 767px, mobile view is activated.
@@ -168,8 +168,7 @@ The quiz format will remain similar, the background will be shorter in width.
 The leaderboard will remain similar, the background will be shorter in width.
 
 
-**06 Credits**
-
+# 06 Credits
 **Content**:
 Embedded Spotify Playlist/Album:
 - Top Hits 2023: https://open.spotify.com/album/5j0o3XQ1YciVzm7MtcFmfG?si=_4wl0JScSkuHa8P12o18MQ
@@ -201,21 +200,19 @@ I took images from these links:
 - Beatblitz Game Background: https://pngtree.com/freebackground/game-red-outer-space_2444899.html
 - The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music-shop2c-the-echo-chamber/1-65abf34d487248d694a0c2a34adb19bd?id=tnnGeKV6BK%2bKmdPKFwkxeQ%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0
 
-
 **Libraries Used**
--
-
+- No library used
 
 **External Sources**
--
+- No external sources
 
 **API Used**
 - Open Trivia Database API
 - RandomUser API
 
 **Acknowledgements**:
--I received inspiration from: 
+I received inspiration from: 
 1. https://songtrivia2.io/ 
 2. https://theanalogvault.com/
 
--Help from ChatGPT for advanced JS functions. (Understood Code)
+- Help from ChatGPT for advanced JS functions. (Understood Code)

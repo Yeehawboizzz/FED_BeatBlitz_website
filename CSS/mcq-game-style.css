@@ -30,6 +30,7 @@ body{
     font-family: 'Inconsolata', monospace;
 }
 
+/*QUIZ*/
 .wrapper{
     background: var(--light-color);
     padding: 1.5rem 4rem 3rem 4rem;
@@ -104,7 +105,7 @@ body{
     transform: scale(0.97);
 }
 
-/* js related */
+/*FOR JS*/
 .selected{
     background-color: var(--grey-color)!important;
     color: var(--dark-color)!important;
@@ -171,9 +172,6 @@ body{
   z-index: 100;
   display: none;
 }
-
-
-
 
 @media(max-width: 678px){
     .quiz-title{

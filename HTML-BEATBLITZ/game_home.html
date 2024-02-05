@@ -14,12 +14,15 @@
 
 <body>
 <div class="screen">
+    <!--Background Image-->
     <img src="../Images/Background.jpg" alt="background" width="100%">
 
+    <!--Audio for Easter Egg-->
     <audio id="bgm" controls autoplay loop>
         <source src="../bgm.mp3" type="audio/mp3">
     </audio>
 
+    <!--Function that triggers Easter Egg Audio-->
     <script>
         let audio = document.getElementById('bgm');
         let playPauseButton = document.getElementById('playPauseButton');
@@ -32,6 +35,7 @@
         }
     </script>
 
+    <!--Main Menu-->
     <div class="menu">
     <h1>BEATBLITZ</h1>
     <h3>The World of<div id="playPauseButton" class="glow" onclick="togglePlayPause()">Rhythm</div></h3>

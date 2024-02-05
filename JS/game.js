@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
+    // Get all the elements that changes according to quiz progress
     const _question = document.getElementById('question');
     const _options = document.querySelector('.quiz-options');
     const _checkBtn = document.getElementById('check-answer');
@@ -8,13 +9,14 @@ document.addEventListener('DOMContentLoaded', function(){
     const _correctScore = document.getElementById('correct-score');
     const _totalQuestion = document.getElementById('total-question');
 
+    // Defining quiz count and score count
     let correctAnswer = "", correctScore = askedCount = 0, totalQuestion = 10;
 
+    // Get the difficulty chosen from JS/difficulty.js
     const queryParams = new URLSearchParams(window.location.search);
     const difficulty = queryParams.get('difficulty') || 'medium'; // Default to 'medium' if not provided
 
-    
-    // load question from API
+    // Store questions from API
     let questions = []; // Array to store the questions
     let currentQuestionIndex = 0; // Index to track the current question
     
@@ -50,22 +52,23 @@ document.addEventListener('DOMContentLoaded', function(){
                     currentQuestionIndex = 0;
                 }
             } else {
+                // Show the error in the console for debugging purpose
                 console.error('No questions found in the API response.');
             }
         } catch (error) {
+            // Show the error in the console for debugging purpose
             console.error('Error parsing JSON from the API response.', error);
         }
     }
     
-
-
-// event listeners
 function eventListeners(){
+    // Event Listener
     _checkBtn.addEventListener('click', checkAnswer);
     _backHomeBtn.addEventListener('click', backHome);
 }
 
 document.addEventListener('DOMContentLoaded', function(){
+    // Load quiz
     loadQuestion();
     eventListeners();
     _totalQuestion.textContent = totalQuestion;
@@ -73,16 +76,18 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 
-// display question and options
+// Display question and options
 function showQuestion(data){
+    // Defining correct and wrong answers
     _checkBtn.disabled = false;
     correctAnswer = data.correct_answer;
     let incorrectAnswer = data.incorrect_answers;
     let optionsList = incorrectAnswer;
     optionsList.splice(Math.floor(Math.random() * (incorrectAnswer.length + 1)), 0, correctAnswer);
-    // console.log(correctAnswer);
+    // Show correct answer in console for debugging purpose
+    console.log(correctAnswer);
 
-    
+    // Display of questions and options
     _question.innerHTML = `${data.question}`;
     _options.innerHTML = `
         ${optionsList.map((option, index) => `
@@ -93,7 +98,7 @@ function showQuestion(data){
 }
 
 
-// options selection
+// Options selection effect
 function selectOption(){
     _options.querySelectorAll('li').forEach(function(option){
         option.addEventListener('click', function(){
@@ -106,11 +111,12 @@ function selectOption(){
     });
 }
 
-// answer checking
+// Answer checking
 function checkAnswer(){
     _checkBtn.disabled = true;
     if(_options.querySelector('.selected')){
         let selectedAnswer = _options.querySelector('.selected span').textContent;
+        // Correct answer validation
         if(selectedAnswer == HTMLDecode(correctAnswer)){
             correctScore++;
             _result.innerHTML = `<p><i class = "fas fa-check"></i>Correct Answer!</p>`;
@@ -119,18 +125,19 @@ function checkAnswer(){
         }
         checkCount();
     } else {
+        // No option selected validation
         _result.innerHTML = `<p><i class = "fas fa-question"></i>Please select an option!</p>`;
         _checkBtn.disabled = false;
     }
 }
 
-// to convert html entities into normal text of correct answer if there is any
+// To convert html entities into normal text of correct answer if there is any
 function HTMLDecode(textString) {
     let doc = new DOMParser().parseFromString(textString, "text/html");
     return doc.documentElement.textContent;
 }
 
-
+// Check question count, load another question and display result
 function checkCount(){
     askedCount++;
     setCount();
@@ -139,8 +146,10 @@ function checkCount(){
             console.log("");
         }, 5000);
 
+        // Display of result
         _result.innerHTML += `<p>Not bad. Your score is ${correctScore}.</p>`;
-        if (correctScore > 7){
+        // If score >= 7, lottie animation will display
+        if (correctScore >= 7){
             _resultAnimation.style.display = "block";
             setTimeout(function(){
                 _resultAnimation.style.display = "none";
@@ -149,6 +158,7 @@ function checkCount(){
         _backHomeBtn.style.display = "block";
         _checkBtn.style.display = "none";
     } else {
+        // Load question if question count not 10 yet
         setTimeout(function(){
             loadQuestion();
         }, 3000);
@@ -160,7 +170,7 @@ function setCount(){
     _correctScore.textContent = correctScore;
 }
 
-
+// Button to go back to Main Menu
 function backHome(){
     window.location.href = 'game_home.html';
 }

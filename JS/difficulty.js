@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function(){
         playLink.href = `game.html?difficulty=${difficulty}`;
     }
 
+    // Alters API URL link based on the buttons chosen to set difficulty
     document.getElementById('easyCategory').addEventListener('click', function() {
         setDifficulty('easy');
     });

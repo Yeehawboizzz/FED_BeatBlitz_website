@@ -31,6 +31,7 @@ body{
     font-family: 'Inconsolata', monospace;
 }
 
+/*LEADERBOARD*/
 .wrapper{
     background: var(--light-color);
     padding: 1.5rem 4rem 3rem 4rem;
@@ -40,7 +41,7 @@ body{
     box-shadow: 0 4px 6px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 10%);
 }
 
-.quiz-foot button{
+.leaderboard-foot button{
     border: none;
     outline: 0;
     font-size: 1.2rem;
@@ -57,12 +58,12 @@ body{
     box-shadow: 0 4px 0 0 #bbbbbb;
 }
 
-.quiz-foot button:hover{
+.leaderboard-foot button:hover{
     background-color: #e6e6e6;
     box-shadow: 0 4px 0 0 #a7a7a7;
 }
 
-.quiz-foot button:active{
+.leaderboard-foot button:active{
     transform: scale(0.95);
 }
 
@@ -72,9 +73,6 @@ body{
 
 
 @media(max-width: 678px){
-    .quiz-title{
-        font-size: 1.6rem;
-    }
     .wrapper{
         margin: 3rem 0;
         width: 90%;
@@ -83,7 +81,7 @@ body{
         border-top-left-radius: 0;
         border-bottom-right-radius: 0;
     }
-    .quiz-foot button{
+    .leaderboard-foot button{
         font-size: 1rem;
     }
 }

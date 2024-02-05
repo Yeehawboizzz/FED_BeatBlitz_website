@@ -1,16 +1,16 @@
-// set variable for messageType
-var messageType;
+// Set variable for messageType
+let messageType;
 
-// use eventlistener to detect submission or clicking of buttons
+// Eventlistener to detect submission or clicking of buttons
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('submitButton').addEventListener('click', function () {
-        // get email and password input
+        // Get email input
         var emailInput = document.getElementById('emailInput').value;
             
-        // validate email and password format using a regular expression
+        // Validate email format using a regular expression
         var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
         
-        // define different scenarios based on correct and wrong inputs
+        // Define different scenarios based on correct and wrong inputs
         if (emailRegex.test(emailInput) && emailInput != '') {
             showMessage("Thank you for subscribing!", ' success');
         } else if (emailInput.trim()===""){
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // function to define the display of content of the message
+    // Function to define the display of content of the message
     function showMessage(message, messageType) {
         var messageBoxes = document.getElementsByClassName('confirmation');
         var messageBox = messageBoxes[0];

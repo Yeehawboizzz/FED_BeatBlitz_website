@@ -12,6 +12,7 @@ window.addEventListener('load', function () {
     var totalSpan = document.getElementById('total-price');
     var totalPrice = parseFloat(totalSpan.textContent);
 
+    // Validation message for whether cart is empty
     if (totalPrice === 0) {
       displayErrorMessage("Purchase Failed. Your Cart is Empty.");
     } else {
