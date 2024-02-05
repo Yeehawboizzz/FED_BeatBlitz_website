@@ -13,6 +13,7 @@
 <link href="../CSS/the-echo-chamber-style.css" rel="stylesheet" type="text/css">
 <script src="../JS/cart.js"></script>
 <script src="../JS/subscribe.js"></script>
+<script src="../JS/restdb.js"></script>
 </head>
 
 <body class="font">
@@ -99,337 +100,241 @@
 <h1 id="new" class="albumtitle">NEW ARRIVAL</h1>
 <br>
 <div id="new1" class="container text-center">
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-  
-    <div class="col">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+    <div id="album1" class="col">
       <div class="card" style="width: 15rem;">
       <div class="album-display-box" data-category="weeknd" data-price="45">
         <div class="content">
           <div class="front">
-            <img src="../Images/album1-weeknd.jpg" alt="album1-weeknd" class="card-img-top">
+          <img src="../Images/album1-weeknd.jpg" alt="album1-weeknd" class="card-img-top">
           </div>
-          <div class="back">
-            <ul>
-              <li>14 songs</li>
-              <li>Release: 20/03/2020</li>
-              <li>Length: 56:19</li>
-              <li>Label: XO</li>
-            </ul>
-          </div>
+          <div id="back-2" class="back"></div>
         </div>
         <div class="card-body">
-          <h5 class="card-title">THE WEEKND</h5>
-          <p class="card-text">AFTER HOURS<br>$45.00SGD</p>
+          <h5 id="card-title-2" class="card-title"></h5>
+          <p id="card-text-2" class="card-text"></p>
         </div>
-
         <button class="add-to-cart-button" data-ball-name="The Weeknd After Hours" data-ball-price="45">Add to Cart</button>   
       </div>
       </div>
     </div>
   
-      <div class="col">
-        <div class="card" style="width: 15rem;">
-        <div class="album-display-box" data-category="taylor" data-price="45">
-          <div class="content">
-            <div class="front">
-              <img src="../Images/album2-taylor.jpg" alt="album2-taylor" class="card-img-top">
-            </div>
-            <div class="back">
-              <ul>
-                <li>22 songs</li>
-                <li>Release: 27/10/2023</li>
-                <li>Length: 77:49</li>
-                <li>Label: Republic Records</li>
-              </ul>
-            </div>
+    <div id="album2" class="col">
+      <div class="card" style="width: 15rem;">
+      <div class="album-display-box" data-category="taylor" data-price="45">
+        <div class="content">
+          <div class="front">
+          <img src="../Images/album2-taylor.jpg" alt="album2-taylor" class="card-img-top">
           </div>
-          <div class="card-body">
-            <h5 class="card-title">TAYLOR SWIFT</h5>
-            <p class="card-text">1989<br>$45.00SGD</p>
-          </div>
-  
-          <button class="add-to-cart-button" data-ball-name="Taylor Swift 1989" data-ball-price="45">Add to Cart</button>   
+          <div id="back-1" class="back"></div>
         </div>
+        <div class="card-body">
+          <h5 id="card-title-1" class="card-title"></h5>
+          <p id="card-text-1" class="card-text"></p>
         </div>
+        <button class="add-to-cart-button" data-ball-name="Taylor Swift 1989" data-ball-price="45">Add to Cart</button>   
       </div>
+      </div>
+    </div>
   
-      <div class="col">
-        <div class="card" style="width: 15rem;">
-          <div class="album-display-box" data-category="coldplay" data-price="45">
-            <div class="content">
-              <div class="front">
-                <img src="../Images/album3-coldplay" alt="album3-coldplay" class="card-img-top">
-              </div>
-              <div class="back">
-                <ul>
-                  <li>12 songs</li>
-                  <li>Release: 15/10/2021</li>
-                  <li>Length: 41:50</li>
-                  <li>Label: Parlophone; Atlantic</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">COLDPLAY</h5>
-              <p class="card-text">M.O.T.S<br>$45.00SGD</p>
-            </div>
-    
-            <button class="add-to-cart-button" data-ball-name="Coldplay Music of the Spheres" data-ball-price="45">Add to Cart</button>   
+    <div class="col">
+      <div class="card" style="width: 15rem;">
+      <div class="album-display-box" data-category="coldplay" data-price="45">
+        <div class="content">
+          <div class="front">
+          <img src="../Images/album3-coldplay" alt="album3-coldplay" class="card-img-top">
           </div>
-          </div>
+          <div id="back-0" class="back"></div>
+        </div>
+        <div class="card-body">
+          <h5 id="card-title-0" class="card-title"></h5>
+          <p id="card-text-0" class="card-text"></p>
+        </div>
+        <button class="add-to-cart-button" data-ball-name="Coldplay Music of the Spheres" data-ball-price="45">Add to Cart</button>   
       </div>
+      </div>
+    </div>
   
-      <div class="col">
-        <div class="card" style="width: 15rem;">
-          <div class="album-display-box" data-category="justin" data-price="45">
-            <div class="content">
-              <div class="front">
-                <img src="../Images/album4-justin.jpg" alt="album4-justin" class="card-img-top">
-              </div>
-              <div class="back">
-                <ul>
-                  <li>17 songs</li>
-                  <li>Release: 19/03/2021</li>
-                  <li>Length: 45:26</li>
-                  <li>Label: Def Jam; RBMG; Schoolboy</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">JUSTIN BIEBER</h5>
-              <p class="card-text">JUSTICE<br>$45.00SGD</p>
-            </div>
-    
-            <button class="add-to-cart-button" data-ball-name="Justin Bieber Justice" data-ball-price="45">Add to Cart</button>   
+    <div class="col">
+      <div class="card" style="width: 15rem;">
+      <div class="album-display-box" data-category="justin" data-price="45">
+        <div class="content">
+          <div class="front">
+          <img src="../Images/album4-justin.jpg" alt="album4-justin" class="card-img-top">
           </div>
-          </div>
+          <div id="back-3" class="back"></div>
+        </div>
+        <div class="card-body">
+          <h5 id="card-title-3" class="card-title"></h5>
+          <p id="card-text-3" class="card-text"></p>
+        </div>
+        <button class="add-to-cart-button" data-ball-name="Justin Bieber Justice" data-ball-price="45">Add to Cart</button>   
       </div>
-  </div>
-  </div>
+      </div>
+    </div>
+</div>
+</div>
       
-  <!--All Time Favourite-->
-  <h1 id="atf" class="albumtitle">ALL TIME FAVOURITE</h1>
-  <br>
-  <div class="container text-center">
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+<!--All Time Favourite-->
+<h1 id="atf" class="albumtitle">ALL TIME FAVOURITE</h1>
+<br>
+<div class="container text-center">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
   
     <div class="col">
       <div class="card" style="width: 15rem;">
-        <div class="album-display-box" data-category="weeknd" data-price="40">
-          <div class="content">
-            <div class="front">
-              <img src="../Images/album5-weeknd.jpg" alt="album5-weeknd" class="card-img-top">
-            </div>
-            <div class="back">
-              <ul>
-                <li>18 songs</li>
-                <li>Release: 25/11/2016</li>
-                <li>Length: 68:40</li>
-                <li>Label: XO; Republic</li>
-              </ul>
-            </div>
+      <div class="album-display-box" data-category="weeknd" data-price="40">
+        <div class="content">
+          <div class="front">
+          <img src="../Images/album5-weeknd.jpg" alt="album5-weeknd" class="card-img-top">
           </div>
-          <div class="card-body">
-            <h5 class="card-title">THE WEEKND</h5>
-            <p class="card-text">STARBOY<br>$40.00SGD</p>
-          </div>
-    
-          <button class="add-to-cart-button" data-ball-name="The Weeknd Starboy" data-ball-price="40">Add to Cart</button>   
+          <div id="back-4" class="back"></div>
         </div>
+        <div class="card-body">
+          <h5 id="card-title-4" class="card-title"></h5>
+          <p id="card-text-4" class="card-text"></p>
         </div>
+        <button class="add-to-cart-button" data-ball-name="The Weeknd Starboy" data-ball-price="40">Add to Cart</button>   
+      </div>
+      </div>
     </div>
-  
-      <div class="col">
-        <div class="card" style="width: 15rem;">
-        <div class="album-display-box" data-category="justin" data-price="40">
-          <div class="content">
-            <div class="front">
-              <img src="../Images/album6-justin.jpg" alt="album6-justin" class="card-img-top">
-            </div>
-            <div class="back">
-              <ul>
-                <li>16 songs</li>
-                <li>Release: 14/02/2020</li>
-                <li>Length: 47:56</li>
-                <li>Label: Def Jam; RBMG</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">JUSTIN BIEBER</h5>
-            <p class="card-text">CHANGES<br>$40.00SGD</p>
-          </div>
-  
-          <button class="add-to-cart-button" data-ball-name="Justin Bieber Changes" data-ball-price="40">Add to Cart</button>   
-        </div>
-        </div>
-      </div>
-  
-      <div class="col">
-        <div class="card" style="width: 15rem;">
-          <div class="album-display-box" data-category="ed" data-price="40">
-            <div class="content">
-              <div class="front">
-                <img src="../Images/album7-ed.jpg" alt="album7-ed" class="card-img-top">
-              </div>
-              <div class="back">
-                <ul>
-                  <li>16 songs</li>
-                  <li>Release: 03/03/2017</li>
-                  <li>Length: 46:14</li>
-                  <li>Label: Asylum; Atlantic</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">ED SHEERAN</h5>
-              <p class="card-text">DIVIDE<br>$40.00SGD</p>
-            </div>
-    
-            <button class="add-to-cart-button" data-ball-name="Ed Sheeran Divide" data-ball-price="40">Add to Cart</button>   
-          </div>
-          </div>
-      </div>
-  
-      <div class="col">
-        <div class="card" style="width: 15rem;">
-          <div class="album-display-box" data-category="eminem" data-price="40">
-            <div class="content">
-              <div class="front">
-                <img src="../Images/album8-eminem.jpg" alt="album8-eminem" class="card-img-top">
-              </div>
-              <div class="back">
-                <ul>
-                  <li>13 songs</li>
-                  <li>Release: 31/08/2018</li>
-                  <li>Length: 45:49</li>
-                  <li>Label: Shady Records</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">EMINEM</h5>
-              <p class="card-text">KAMIKAZE<br>$40.00SGD</p>
-            </div>
-    
-            <button class="add-to-cart-button" data-ball-name="Eminem Kamikaze" data-ball-price="40">Add to Cart</button>   
-          </div>
-          </div>
-      </div>
-  </div>
-  </div>
-  
-  <!--Good Old Times-->
-  <h1 id="got" class="albumtitle">GOOD OLD TIMES</h1>
-  <br>
-  <div class="container text-center">
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
   
     <div class="col">
       <div class="card" style="width: 15rem;">
-        <div class="album-display-box" data-category="eminem" data-price="35">
-          <div class="content">
-            <div class="front">
-              <img src="../Images/album9-eminem.jpg" alt="album9-eminem" class="card-img-top">
-            </div>
-            <div class="back">
-              <ul>
-                <li>19 songs</li>
-                <li>Release: 26/05/2002</li>
-                <li>Length: 77:30</li>
-                <li>Label: AFTERMATH</li>
-              </ul>
-            </div>
+      <div class="album-display-box" data-category="justin" data-price="40">
+        <div class="content">
+          <div class="front">
+          <img src="../Images/album6-justin.jpg" alt="album6-justin" class="card-img-top">
           </div>
-          <div class="card-body">
-            <h5 class="card-title">EMINEM</h5>
-            <p class="card-text">THE EMINEM SHOW<br>$35.00SGD</p>
-          </div>
-    
-          <button class="add-to-cart-button" data-ball-name="Eminem The Eminem Show" data-ball-price="35">Add to Cart</button>   
+          <div id="back-5" class="back"></div>
         </div>
+        <div class="card-body">
+          <h5 id="card-title-5" class="card-title"></h5>
+          <p id="card-text-5" class="card-text"></p>
         </div>
+        <button class="add-to-cart-button" data-ball-name="Justin Bieber Changes" data-ball-price="40">Add to Cart</button>   
+      </div>
+      </div>
     </div>
   
-      <div class="col">
-        <div class="card" style="width: 15rem;">
-        <div class="album-display-box" data-category="one" data-price="40">
-          <div class="content">
-            <div class="front">
-              <img src="../Images/album10-one.jpg" alt="album10-one" class="card-img-top">
-            </div>
-            <div class="back">
-              <ul>
-                <li>12 songs</li>
-                <li>Release: 17/11/2014</li>
-                <li>Length: 43:33</li>
-                <li>Label: Columbia; Syco</li>
-              </ul>
-            </div>
+    <div class="col">
+      <div class="card" style="width: 15rem;">
+      <div class="album-display-box" data-category="ed" data-price="40">
+        <div class="content">
+          <div class="front">
+          <img src="../Images/album7-ed.jpg" alt="album7-ed" class="card-img-top">
           </div>
-          <div class="card-body">
-            <h5 class="card-title">ONE DIRECTION</h5>
-            <p class="card-text">FOUR<br>$40.00SGD</p>
-          </div>
-  
-          <button class="add-to-cart-button" data-ball-name="One Direction Four" data-ball-price="40">Add to Cart</button>   
+          <div id="back-6" class="back"></div>
         </div>
+        <div class="card-body">
+          <h5 id="card-title-6" class="card-title"></h5>
+          <p id="card-text-6" class="card-text"></p>
+        </div>    
+        <button class="add-to-cart-button" data-ball-name="Ed Sheeran Divide" data-ball-price="40">Add to Cart</button>   
+      </div>
+      </div>
+    </div>
+  
+    <div class="col">
+      <div class="card" style="width: 15rem;">
+      <div class="album-display-box" data-category="eminem" data-price="40">
+        <div class="content">
+          <div class="front">
+          <img src="../Images/album8-eminem.jpg" alt="album8-eminem" class="card-img-top">
+          </div>
+          <div id="back-7" class="back"></div>
         </div>
+        <div class="card-body">
+          <h5 id="card-title-7" class="card-title"></h5>
+          <p id="card-text-7" class="card-text"></p>
+        </div>
+        <button class="add-to-cart-button" data-ball-name="Eminem Kamikaze" data-ball-price="40">Add to Cart</button>   
       </div>
+      </div>
+    </div>
+</div>
+</div>
   
-      <div class="col">
-        <div class="card" style="width: 15rem;">
-          <div class="album-display-box" data-category="westlife" data-price="35">
-            <div class="content">
-              <div class="front">
-                <img src="../Images/album11-westlife.jpg" alt="album11-westlife" class="card-img-top">
-              </div>
-              <div class="back">
-                <ul>
-                  <li>16 songs</li>
-                  <li>Release: 06/11/2000</li>
-                  <li>Length: 70:02</li>
-                  <li>Label: BMG; RCA</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">WESTLIFE</h5>
-              <p class="card-text">COAST TO COAST<br>$35.00SGD</p>
-            </div>
-    
-            <button class="add-to-cart-button" data-ball-name="Westlife Coast to Coast" data-ball-price="35">Add to Cart</button>   
-          </div>
-          </div>
-      </div>
+<!--Good Old Times-->
+<h1 id="got" class="albumtitle">GOOD OLD TIMES</h1>
+<br>
+<div class="container text-center">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">  
   
-      <div class="col">
-        <div class="card" style="width: 15rem;">
-          <div class="album-display-box" data-category="elvis" data-price="30">
-            <div class="content">
-              <div class="front">
-                <img src="../Images/album12-elvis.jpg" alt="album12-elvis" class="card-img-top">
-              </div>
-              <div class="back">
-                <ul>
-                  <li>13 songs</li>
-                  <li>Release: 12/02/1972</li>
-                  <li>Length: 31:34</li>
-                  <li>Label: RCA Victor</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">ELVIS</h5>
-              <p class="card-text">NOW<br>$30.00SGD</p>
-            </div>
-    
-            <button class="add-to-cart-button" data-ball-name="Elvis Now" data-ball-price="30">Add to Cart</button>   
+    <div class="col">
+      <div class="card" style="width: 15rem;">
+      <div class="album-display-box" data-category="eminem" data-price="35">
+        <div class="content">
+          <div class="front">
+          <img src="../Images/album9-eminem.jpg" alt="album9-eminem" class="card-img-top">
           </div>
-          </div>
+          <div id="back-8" class="back"></div>
+        </div>
+        <div class="card-body">
+          <h5 id="card-title-8" class="card-title"></h5>
+          <p id="card-text-8" class="card-text"></p>
+        </div>
+        <button class="add-to-cart-button" data-ball-name="Eminem The Eminem Show" data-ball-price="35">Add to Cart</button>   
       </div>
-  </div>
-  </div>
+      </div>
+    </div>
+  
+    <div class="col">
+      <div class="card" style="width: 15rem;">
+      <div class="album-display-box" data-category="one" data-price="40">
+        <div class="content">
+          <div class="front">
+          <img src="../Images/album10-one.jpg" alt="album10-one" class="card-img-top">
+          </div>
+          <div id="back-9" class="back"></div>
+        </div>
+        <div class="card-body">
+          <h5 id="card-title-9" class="card-title"></h5>
+          <p id="card-text-9" class="card-text"></p>
+        </div>
+        <button class="add-to-cart-button" data-ball-name="One Direction Four" data-ball-price="40">Add to Cart</button>   
+      </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 15rem;">
+      <div class="album-display-box" data-category="westlife" data-price="35">
+        <div class="content">
+          <div class="front">
+          <img src="../Images/album11-westlife.jpg" alt="album11-westlife" class="card-img-top">
+          </div>
+          <div id="back-10" class="back"></div>
+        </div>
+        <div class="card-body">
+          <h5 id="card-title-10" class="card-title"></h5>
+          <p id="card-text-10" class="card-text"></p>
+        </div>
+        <button class="add-to-cart-button" data-ball-name="Westlife Coast to Coast" data-ball-price="35">Add to Cart</button>   
+      </div>
+      </div>
+    </div>
+  
+    <div class="col">
+      <div class="card" style="width: 15rem;">
+      <div class="album-display-box" data-category="elvis" data-price="30">
+        <div class="content">
+          <div class="front">
+          <img src="../Images/album12-elvis.jpg" alt="album12-elvis" class="card-img-top">
+          </div>
+          <div id="back-11" class="back"></div>
+        </div>
+        <div class="card-body">
+          <h5 id="card-title-11" class="card-title"></h5>
+          <p id="card-text-11" class="card-text"></p>
+        </div>  
+        <button class="add-to-cart-button" data-ball-name="Elvis Now" data-ball-price="30">Add to Cart</button>   
+      </div>
+      </div>
+    </div>
+</div>
+</div>
 
 <!--Footer-->
 <footer class="footer">
