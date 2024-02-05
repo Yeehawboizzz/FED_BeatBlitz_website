@@ -13,6 +13,7 @@
 <link href="../CSS/the-echo-chamber-style.css" rel="stylesheet" type="text/css">
 <script src="../JS/cart.js"></script>
 <script src="../JS/subscribe.js"></script>
+<script src="../JS/restdb.js"></script>
 </head>
 
 <body class="font">
@@ -101,25 +102,20 @@
 <div id="new1" class="container text-center">
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
   
-    <div class="col">
+    <div id="album1" class="col">
       <div class="card" style="width: 15rem;">
       <div class="album-display-box" data-category="weeknd" data-price="45">
+
         <div class="content">
           <div class="front">
             <img src="../Images/album1-weeknd.jpg" alt="album1-weeknd" class="card-img-top">
           </div>
-          <div class="back">
-            <ul>
-              <li>14 songs</li>
-              <li>Release: 20/03/2020</li>
-              <li>Length: 56:19</li>
-              <li>Label: XO</li>
-            </ul>
-          </div>
+          <div id="back-2" class="back"></div>
         </div>
+
         <div class="card-body">
-          <h5 class="card-title">THE WEEKND</h5>
-          <p class="card-text">AFTER HOURS<br>$45.00SGD</p>
+          <h5 id="card-title-2" class="card-title"></h5>
+          <p id="card-text-2" class="card-text"></p>
         </div>
 
         <button class="add-to-cart-button" data-ball-name="The Weeknd After Hours" data-ball-price="45">Add to Cart</button>   
@@ -127,25 +123,20 @@
       </div>
     </div>
   
-      <div class="col">
+      <div id="album2" class="col">
         <div class="card" style="width: 15rem;">
         <div class="album-display-box" data-category="taylor" data-price="45">
+
           <div class="content">
             <div class="front">
               <img src="../Images/album2-taylor.jpg" alt="album2-taylor" class="card-img-top">
             </div>
-            <div class="back">
-              <ul>
-                <li>22 songs</li>
-                <li>Release: 27/10/2023</li>
-                <li>Length: 77:49</li>
-                <li>Label: Republic Records</li>
-              </ul>
-            </div>
+            <div id="back-1" class="back"></div>
           </div>
+
           <div class="card-body">
-            <h5 class="card-title">TAYLOR SWIFT</h5>
-            <p class="card-text">1989<br>$45.00SGD</p>
+            <h5 id="card-title-1" class="card-title"></h5>
+            <p id="card-text-1" class="card-text"></p>
           </div>
   
           <button class="add-to-cart-button" data-ball-name="Taylor Swift 1989" data-ball-price="45">Add to Cart</button>   
@@ -156,22 +147,17 @@
       <div class="col">
         <div class="card" style="width: 15rem;">
           <div class="album-display-box" data-category="coldplay" data-price="45">
+
             <div class="content">
               <div class="front">
                 <img src="../Images/album3-coldplay" alt="album3-coldplay" class="card-img-top">
               </div>
-              <div class="back">
-                <ul>
-                  <li>12 songs</li>
-                  <li>Release: 15/10/2021</li>
-                  <li>Length: 41:50</li>
-                  <li>Label: Parlophone; Atlantic</li>
-                </ul>
-              </div>
+              <div id="back-0" class="back"></div>
             </div>
+
             <div class="card-body">
-              <h5 class="card-title">COLDPLAY</h5>
-              <p class="card-text">M.O.T.S<br>$45.00SGD</p>
+              <h5 id="card-title-0" class="card-title"></h5>
+              <p id="card-text-0" class="card-text"></p>
             </div>
     
             <button class="add-to-cart-button" data-ball-name="Coldplay Music of the Spheres" data-ball-price="45">Add to Cart</button>   
@@ -182,22 +168,17 @@
       <div class="col">
         <div class="card" style="width: 15rem;">
           <div class="album-display-box" data-category="justin" data-price="45">
+
             <div class="content">
               <div class="front">
                 <img src="../Images/album4-justin.jpg" alt="album4-justin" class="card-img-top">
               </div>
-              <div class="back">
-                <ul>
-                  <li>17 songs</li>
-                  <li>Release: 19/03/2021</li>
-                  <li>Length: 45:26</li>
-                  <li>Label: Def Jam; RBMG; Schoolboy</li>
-                </ul>
-              </div>
+              <div id="back-3" class="back"></div>
             </div>
+
             <div class="card-body">
-              <h5 class="card-title">JUSTIN BIEBER</h5>
-              <p class="card-text">JUSTICE<br>$45.00SGD</p>
+              <h5 id="card-title-3" class="card-title"></h5>
+              <p id="card-text-3" class="card-text"></p>
             </div>
     
             <button class="add-to-cart-button" data-ball-name="Justin Bieber Justice" data-ball-price="45">Add to Cart</button>   
