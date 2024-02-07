@@ -16,14 +16,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // Alters API URL link based on the buttons chosen to set difficulty
     document.getElementById('easyCategory').addEventListener('click', function() {
+        // Change url to easy
         setDifficulty('easy');
     });
 
     document.getElementById('mediumCategory').addEventListener('click', function() {
+        // Change url to medium
         setDifficulty('medium');
     });
 
     document.getElementById('hardCategory').addEventListener('click', function() {
+        // Change url to hard
         setDifficulty('hard');
     });
 });

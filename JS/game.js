@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // Get the difficulty chosen from JS/difficulty.js
     const queryParams = new URLSearchParams(window.location.search);
-    const difficulty = queryParams.get('difficulty') || 'medium'; // Default to 'medium' if not provided
+    // Default to 'medium' if not provided
+    const difficulty = queryParams.get('difficulty') || 'medium';
 
     // Store questions from API
     let questions = []; // Array to store the questions
@@ -96,7 +97,6 @@ function showQuestion(data){
     `;
     selectOption();
 }
-
 
 // Options selection effect
 function selectOption(){

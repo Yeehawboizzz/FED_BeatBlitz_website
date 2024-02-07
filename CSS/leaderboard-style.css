@@ -71,7 +71,7 @@ body{
     margin-top: 0;
 }
 
-
+/*RESPONSIVENESS*/
 @media(max-width: 678px){
     .wrapper{
         margin: 3rem 0;

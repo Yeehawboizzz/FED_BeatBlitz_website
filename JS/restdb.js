@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const apiUrl = "https://fedassg2albums-d12d.restdb.io/rest/albums";
   const apiKey = "65b9fa451513d1f084491cb6";
 
+  // Fetch api array from restDB
   fetch(apiUrl, {
     method: 'GET',
     headers: {
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return response.json();
     })
     .then(data => {
-      // Handle the retrieved data here
+      // Console.log the array fetched for debugging purposes
       console.log(data);
       displayAlbums(data);
     })

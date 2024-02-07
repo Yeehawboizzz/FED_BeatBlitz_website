@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(response => response.json())
       .then(function (data) {
         let user = data.results[0];
+        // Update html for the usernames
         document.getElementById(elementId).innerText = user.login.username;
       });
   }

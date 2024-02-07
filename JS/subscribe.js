@@ -5,12 +5,12 @@ let messageType;
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('submitButton').addEventListener('click', function () {
         // Get email input
-        var emailInput = document.getElementById('emailInput').value;
+        let emailInput = document.getElementById('emailInput').value;
             
         // Validate email format using a regular expression
-        var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
         
-        // Define different scenarios based on correct and wrong inputs
+        // Define different scenarios based on different inputs
         if (emailRegex.test(emailInput) && emailInput != '') {
             showMessage("Thank you for subscribing!", ' success');
         } else if (emailInput.trim()===""){
@@ -22,12 +22,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to define the display of content of the message
     function showMessage(message, messageType) {
-        var messageBoxes = document.getElementsByClassName('confirmation');
-        var messageBox = messageBoxes[0];
+        let messageBoxes = document.getElementsByClassName('confirmation');
+        let messageBox = messageBoxes[0];
         messageBox.textContent = message;
         messageBox.className = 'confirmation ' + messageType;
         messageBox.style.display = 'block';
 
+        // Function to disappear after 5s
         setTimeout(function () {
             messageBox.style.display = 'none';
         }, 5000); 

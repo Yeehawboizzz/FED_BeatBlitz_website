@@ -5,6 +5,7 @@ body
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+/*Glowing effect for the word RHYTHM*/
 .glow {
   color: rgb(188, 0, 0);
   text-align: center;
@@ -186,7 +187,7 @@ button {
   background: #bc1a6e;
 }
 
-
+/*RESPONSIVENESS*/
 @media (max-width: 768px) {
   img {
     filter: brightness(70%);

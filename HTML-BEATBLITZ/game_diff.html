@@ -29,8 +29,10 @@
         let playPauseButton = document.getElementById('playPauseButton');
         function togglePlayPause() {
         if (audio.paused) {
+            // Play audio when the element is pressed
             audio.play();
         } else {
+            // Pause audio when pressed again
             audio.pause();
         }
         }

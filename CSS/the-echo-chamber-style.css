@@ -232,6 +232,7 @@ body {
 .add-to-cart-button {
   font-size: 18px; 
   padding: 10px 20px; 
+  border-radius: 5px;
   background-color: rgb(40, 40, 40);
   color: white;
 }
