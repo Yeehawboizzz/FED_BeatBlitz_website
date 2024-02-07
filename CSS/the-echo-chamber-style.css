@@ -51,10 +51,11 @@ body {
 }
 
 .footer-container {
-  background-color: white;
+  background-color: rgb(40, 40, 40);
   padding: 20px;
   text-align: center;
   position: relative;
+  color: white;
 }
   
 .footer-tabs {
@@ -80,7 +81,7 @@ body {
 }
   
 .footer-pages a:hover {
-  background-color: white; 
+  background-color: rgb(137, 137, 137); 
 }
   
 .footer-content {
