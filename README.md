@@ -1,11 +1,11 @@
-FED Assignment 2
-Done by: Wang Po Yen Jason S10255872, Ong Yee Hen S10258759
-Class: IT02
+**FED Assignment 2**
+**Done by: Wang Po Yen Jason S10255872, Ong Yee Hen S10258759**
+**Class: IT02**
 
 Project Name: **The Echo Chamber (ft. BeatBlitz)**: 
-Github Repository: https://github.com/Yeehawboizzz/FED_TheEchoChamber_website
-Github Page: https://yeehawboizzz.github.io/FED_TheEchoChamber_website/
-Google Drive Pitch: https://drive.google.com/drive/folders/18pyO743KGqGzl5Ti57R2dubHZBhiyVsz?usp=sharing
+- Github Repository: https://github.com/Yeehawboizzz/FED_TheEchoChamber_website
+- Github Page: https://yeehawboizzz.github.io/FED_TheEchoChamber_website/
+- Google Drive Pitch: https://drive.google.com/drive/folders/18pyO743KGqGzl5Ti57R2dubHZBhiyVsz?usp=sharing
 
 # 01 Introduction
 Welcome to The Echo Chamber! Step into a digital haven that transcends the ordinary one-stop destination for a symphony of musical experiences. We proudly present a unique online shop that goes beyond just albums and playlists, but to a world where music is not just heard, but felt.
