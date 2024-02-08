@@ -1,3 +1,4 @@
+// Done by Jason
 document.addEventListener('DOMContentLoaded', function(){
     const playLink = document.getElementById('playLink');
 

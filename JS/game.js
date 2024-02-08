@@ -1,3 +1,4 @@
+// Done by Jason and YeeHen
 document.addEventListener('DOMContentLoaded', function(){
     // Get all the elements that changes according to quiz progress
     const _question = document.getElementById('question');

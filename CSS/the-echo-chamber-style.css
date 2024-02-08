@@ -389,6 +389,7 @@ body {
   margin: 5px;
 }
 
+/*The css animation for flipping to display album info*/
 .album-display-box .content {
   position: relative;
   width: 200px;

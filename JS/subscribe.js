@@ -1,3 +1,4 @@
+// Done by YeeHen
 // Set variable for messageType
 let messageType;
 

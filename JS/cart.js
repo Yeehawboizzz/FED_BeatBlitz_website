@@ -1,4 +1,5 @@
-/*Cart*/
+// Done by YeeHen
+// Cart
 window.addEventListener('load', function () {
   // Event listener for clicking cart icon
   document.getElementById('cart-icon').addEventListener('click', function () {

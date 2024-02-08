@@ -1,3 +1,4 @@
+// Done by YeeHen and Jason
 document.addEventListener('DOMContentLoaded', function() {
   const url = 'https://randomuser.me/api/';
 

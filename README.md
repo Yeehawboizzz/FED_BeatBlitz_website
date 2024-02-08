@@ -1,8 +1,10 @@
 FED Assignment 2
-Done by: Wang Po Yen Jason and Ong Yee Hen 
+Done by: Wang Po Yen Jason S10255872, Ong Yee Hen S10258759
 Class: IT02
 
 Project Name: **The Echo Chamber (ft. BeatBlitz)**: 
+Github Repository: https://github.com/Yeehawboizzz/FED_TheEchoChamber_website
+Github Page: https://yeehawboizzz.github.io/FED_TheEchoChamber_website/
 
 # 01 Introduction
 Welcome to The Echo Chamber! Step into a digital haven that transcends the ordinary one-stop destination for a symphony of musical experiences. We proudly present a unique online shop that goes beyond just albums and playlists, but to a world where music is not just heard, but felt.
@@ -20,7 +22,6 @@ Are you ready to face the challenge and become the ultimate maestro of our music
 
 
 # 02 Design Process
-
 User 1: Customers interested in Albums:
 
 For User 1, our website provides a vast collection of albums spanning various genres, eras and artists. Upon entering the site, they can easily look up the NEW ARRIVALS that are featured in the main page, then navigate to the ALL ALBUMS Page where all the albums we sell will be featured. Our albums are categorised and users can use the filter panel to quickly locate the genre they are interested in. Then, the user can purchase the albums by simply pressing Add to Cart, which will then be displayed in the Shopping Cart for users to save it temporarily or buy it.
@@ -200,6 +201,11 @@ I took images from these links:
 - Beatblitz Game Background: https://pngtree.com/freebackground/game-red-outer-space_2444899.html
 - The Echo Chamber Logo: https://www.bing.com/images/create/a-logo-for-vinyl-music-shop2c-the-echo-chamber/1-65abf34d487248d694a0c2a34adb19bd?id=tnnGeKV6BK%2bKmdPKFwkxeQ%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&ajaxhist=0&ajaxserp=0
 
+
+**Lottie Animations**:
+- Loading Animation: https://app.lottiefiles.com/animation/cf4854b6-f20c-4b29-a5ab-4ab3a0f20370?panel=embed
+- Trophy for API Quiz: https://app.lottiefiles.com/animation/32e27dba-07b4-421a-a9c2-5b515a22afec?panel=embed
+
 **Libraries Used**
 - No library used
 
@@ -209,6 +215,7 @@ I took images from these links:
 **API Used**
 - Open Trivia Database API
 - RandomUser API
+- RestDB
 
 **Acknowledgements**:
 I received inspiration from: 
@@ -219,4 +226,4 @@ I received inspiration from:
 
 
 # Disclaimer
-If the quiz questions does not load, it might be due to too many requests on the API, just wait or reload. 
+If the quiz questions does not load, it might be due to too many requests on the API, please wait or reload. 

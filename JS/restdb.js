@@ -1,3 +1,4 @@
+// Done by YeeHen and Jason
 document.addEventListener('DOMContentLoaded', function () {
   const apiUrl = "https://fedassg2albums-d12d.restdb.io/rest/albums";
   const apiKey = "65b9fa451513d1f084491cb6";
