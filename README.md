@@ -216,3 +216,7 @@ I received inspiration from:
 2. https://theanalogvault.com/
 
 - Help from ChatGPT for advanced JS functions. (Understood Code)
+
+
+# Disclaimer
+If the quiz questions does not load, it might be due to too many requests on the API, just wait or reload. 
